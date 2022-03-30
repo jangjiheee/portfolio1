@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, noto sans kr;
+}
+
+
+ul,li,ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html, body {
+    font-size: 18px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #828181;
+}

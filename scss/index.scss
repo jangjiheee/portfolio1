@@ -1,0 +1,22 @@
+@import "style.scss";
+@import "common.scss";
+@import "mixin.scss";
+
+//header
+header {
+    width:100%;
+
+    .logo-menu {
+        .confix {
+            .header-flex {
+                a {
+                    img {
+                        width: 80%;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

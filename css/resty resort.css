@@ -35,10 +35,11 @@ header {
     margin-left: 563px;
 }
 
+
 .header-flex .small-nav li {
     font-size: 14px;
     padding: 0 10px;
-    border-right: 2px solid #000;
+    border-right: 1px solid #000;
 }
 
 .header-flex .small-nav li:last-child {
@@ -52,6 +53,20 @@ header {
 
 .header-flex .main-nav li:first-child {
     margin-left: 0;
+}
+
+.header-flex .main-nav li::after {
+    content:"";
+    display: block;
+    border-bottom: 2px solid #969696;
+    transition: ease-out;
+    width: 0;
+}
+
+.header-flex .main-nav li:hover::after {
+    transition: all 250ms ease-out;
+    left: 0%;
+    width: 100%;
 }
 
 .header-flex img {
@@ -68,7 +83,11 @@ header {
 
 
 /* article */
-
+article h2 {
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: -0.1px;
+}
 
 article .main-img {
     position: relative;
@@ -106,7 +125,9 @@ article .reserve-confix .reservation li p{
     line-height: 30px;
     margin-top: 20px;
     text-align: center;
+    color: #fff;
 }
+
 
 /* title */
 .title {
@@ -139,6 +160,13 @@ article .reserve-confix .reservation li p{
     background-color: #5a362c;
 }
 
+.reserve-bar .reservation img {
+    width: 30px;
+    height: 29px;
+    margin-right: 17px;
+    vertical-align: middle;
+}
+
 .reserve-confix {
     margin: 0 auto;
 }
@@ -153,9 +181,10 @@ main h2 {
 
 main h3 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-bottom: 60px;
     font-size: 24px;
+    font-weight: 400;
 }
 
 
@@ -163,15 +192,21 @@ main h3 {
 .event {
     margin-top: 250px;
 }
+
 .event-list {
     display:flex;
+}
+
+.event-list a:hover {
+    opacity: 0.4;
+    transition: 0.3s ease;
 }
 
 .event-list h4,
 .event-list p {
     text-align: center;
+    line-height: 30px;
 }
-
 .event-list div:nth-child(2) {
     margin: 0 40px;
 }
@@ -203,9 +238,18 @@ hr {
     margin-bottom: 250px;
 }
 
+.btn a {
+    color: #fff;
+}
+
 /* program */
 .program-list {
     margin-left: 125px;
+}
+
+.program-list .face:hover,
+.program-list .campfire:hover {
+    transform: scale(1.03);
 }
 
 .program-list div {
@@ -237,22 +281,97 @@ hr {
 }
 
 
-/* 여보 사랑해용~*/
 /* middle-banner */
-.middle-banner div {
+.middle-banner {
     width: 100%;
+    position: relative;
+    background: #5a362c;
+    overflow: hidden;
+    height: 550px;
     display: flex;
-    background-color: #5a362c;
 }
 
+.middle-banner .left-side {
+    position: relative;
+    width: 50%;
+    height: 550px;
+}
 
-main section .middle-text {
-    display: block;
-    background-color: rgb(90,54,44);
+.middle-banner .left-text {
+    z-index: 10;
+    word-break: keep-all;
+}
+
+.middle-banner .member-benefit-detail {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 310px;
+    height: 70px;
+    text-align: center;
+    background: #38221c;
+    line-height: 70px;
+}
+
+.middle-banner .member-benefit-detail a {
+    color: #fff;
+    letter-spacing: -0.1px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.middle-banner .member-benefit-detail img {
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.middle-banner .right-side {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.middle-banner h2 {
+    text-align: left;
+    color: rgb(178,140,130);
+    letter-spacing: 0.2em;
+    font-size: 33px;
+    padding-top: 83px;
+}
+
+.middle-banner h3 {
+    text-align: left;
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 65px;
+    color: #fff;
+}
+
+.middle-banner p {
     color: #fff;
     line-height: 36px;
-    padding-top: 80px;
+}
+
+/* .middle-banner {
+    width: 100%;
+    padding-top : 80px;
+    padding-bottom: 105px;
+    background: url(../image/whole_view.jpg) right top no-repeat ;
+    background-size: cover;
+}
+
+.middle-text {
     position: relative;
+    width: 33.3333333%;
+}
+
+.member-benefit-detail {
+    position: absolute;
+    padding: 22px;
+    background-color: #38221c;
+    font-size: 22px;
 }
 
 .middle-banner h2 {
@@ -267,16 +386,14 @@ main section .middle-text {
     text-align: left;
     font-size: 33px;
     margin-bottom: 65px;
+    color: #fff;
 }
 
-.middle-banner .member-benefit {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 22px;
-    background-color: #38221c;
-    font-size: 22px;
-}
+.middle-banner p {
+    color: #fff;
+    line-height: 36px;
+} */
+
 
 
 /* room */
@@ -294,16 +411,31 @@ main section .middle-text {
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
-    opacity: 0.53;
+    opacity: 0.3;
 }
 
 .room-list img:last-child {
     margin-bottom: 0;
 }
 
-.room-list a:hover {
-    font-weight: bold;
+.room-text {
+    opacity: 0.3;
 }
+
+.deluxe:hover .room-text,
+.family:hover .room-text,
+.suite:hover .room-text {
+    opacity: 1;
+    color: grey;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.room-list img:hover{
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
 
 .deluxe,
 .family,
@@ -322,7 +454,6 @@ main section .middle-text {
     font-size: 16px;
 }
 
-
 .room-info {
     width: 440px;
     margin: 0 20px;
@@ -340,7 +471,7 @@ main section .middle-text {
     line-height: 34px;
 }
 
-.room-info .room-text {
+.room-info .room-detail-info {
     margin-top: 98px; 
 }
 .room-zoom img {
@@ -362,6 +493,10 @@ main section .middle-text {
     padding: 0;
 }
 
+.facility-list img:hover {
+    opacity: 0.4;
+    transition: 0.3 ease;
+}
 .facility-list li {
     position: relative;
 }
@@ -385,51 +520,146 @@ footer {
     font-weight: 240px;
     font-size: 16px;
     color: #fff;
+    height: 238px;
+    margin-top: 250px;
 }
 
-footer div {
+footer .footer-flexbox {
     display: flex;
     justify-content: space-between;
 }
 
-footer img {
-    height: 82px;
+footer .logo {
+    margin: auto 0;
 }
 
-footer .footer-text {
+footer .footer-info {
     font-size: 16px;
     font-weight: 300;
     margin: 40px 0;
 }
 
-.footer-menu {
+.footer-company .footer-company-law {
     display: block;
+    margin-top: 50px;
 }
 
-.footer-menu .footer-main-menu li {
+.footer-company .footer-company-law li {
     display: inline-block;
     padding-right: 5px;
     border-right: 1px solid #fff;
 }
-
-.footer-menu .footer-main-menu a {
+.footer-company .footer-company-law a {
     color: #fff;
-}
-
-.footer-menu .footer-main-menu li:last-child {
-    border-right: none;
-    padding-right: 0;
+    font-weight: 100;
 }
 
 footer .sns {
     float: right;
+    margin-top: 10px;
 }
 
-footer .sns li {
-    display: inline-block;
-}
-
-footer .sns li img {
-    height: 22px;
+footer .sns a {
     margin-left: 20px;
 }
+
+footer .family-site {
+    clear: both;
+    margin-top: 50px;
+}
+
+@media all and (max-width: 768px) {
+    .confix {
+        width: 650px;
+        margin: 0 auto;
+    }
+
+    /* header */
+    .header-flex img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .header-flex .small-nav ul {
+        display: none;
+    }
+
+    .header-flex .main-nav a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    /* article */
+    article .main-img img {
+        width: 100%;
+        height: 500px;
+    } 
+
+    article .main-img h1 {
+        font-size: 30px;
+    }
+
+    article .main-img h2 {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    article .reserve-bar {
+        display: none;
+    }
+    
+    /* main */
+    /* event*/
+    main .event h2 {
+        font-size: 25px;
+    }
+
+    main .event h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .event .event-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event .event-list .beer-text,
+    .event .event-list .kids-text,
+    .event .event-list .breakfast-text {
+        display: none;
+    }
+
+    /* program */
+    .program h2 {
+        font-size: 25px;
+    }
+
+    .program h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .program-list {
+        margin: 0;
+    }
+
+    .program-list div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .program-list div img {
+        margin: 0 auto;
+    }
+
+    .program-list div .face-info,
+    .program-list div .fire-info {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        text-align: center;
+    }
+} 

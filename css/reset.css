@@ -19,6 +19,7 @@ a {
 
 html, body {
     font-size: 18px;
+    background: url(../image/background.jpg) no-repeat;
 }
 
 hr {

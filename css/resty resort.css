@@ -568,6 +568,14 @@ footer .family-site {
     margin-top: 50px;
 }
 
+.pageup_btn img {
+    position: fixed;
+    right: 80px;
+    bottom: 100px;
+    width: 50px;
+}
+
+
 @media all and (max-width: 768px) {
     .confix {
         width: 650px;

@@ -1,0 +1,673 @@
+@charset "utf-8";
+
+.confix {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    /* background-color: pink; */
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 120px;
+    padding-top: 18px;
+    /* background-color: #5a362c; */
+}
+
+.header-flex {
+    height: 85px;
+}
+
+.header-flex .small-nav,
+.header-flex .main-nav {
+    display: block;
+}
+
+.header-flex .small-nav ul,
+.header-flex .main-nav ul {
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 14px 0;
+}
+
+.header-flex .small-nav ul {
+    margin-left: 563px;
+}
+
+
+.header-flex .small-nav li {
+    font-size: 14px;
+    padding: 0 10px;
+    border-right: 1px solid #000;
+}
+
+.header-flex .small-nav li:last-child {
+    border-right: none;
+}
+
+.header-flex .main-nav li {
+    font-size: 24px;
+    margin-left: 66px;
+}
+
+.header-flex .main-nav li:first-child {
+    margin-left: 0;
+}
+
+.header-flex .main-nav li::after {
+    content:"";
+    display: block;
+    border-bottom: 2px solid #969696;
+    transition: ease-out;
+    width: 0;
+}
+
+.header-flex .main-nav li:hover::after {
+    transition: all 250ms ease-out;
+    left: 0%;
+    width: 100%;
+}
+
+.header-flex img {
+    height: 85px;
+    vertical-align: middle;
+}
+
+.header-flex .menu {
+    float: right;
+    /* background-color: aqua; */
+    height: 85px;
+}
+
+
+
+/* article */
+article h2 {
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: -0.1px;
+}
+
+article .main-img {
+    position: relative;
+}
+
+article .main-img img{
+    width: 100%;
+    height: 850px;
+    margin: 0 auto;
+}
+
+article .reserve-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+article .reserve-confix {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+article .reserve-confix .reservation ul {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+    font-size: 24px;
+}
+
+article .reserve-confix .reservation li a{ 
+    color: #fff;
+}
+
+article .reserve-confix .reservation li p{ 
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* title */
+.title {
+    position: absolute;
+    vertical-align: middle;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1, h2 {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 72px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.title h2{ 
+    font-size: 24px;
+    color: #fff;
+}
+
+.reserve-bar {
+    /* position: absolute; */
+    bottom: 0;
+    height: 100px;
+    background-color: #5a362c;
+}
+
+.reserve-bar .reservation img {
+    width: 30px;
+    height: 29px;
+    margin-right: 17px;
+    vertical-align: middle;
+}
+
+.reserve-confix {
+    margin: 0 auto;
+}
+
+
+/* main */
+
+main h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+main h3 {
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 60px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+/* event */
+.event {
+    margin-top: 250px;
+}
+
+.event-list {
+    display:flex;
+}
+
+.event-list a:hover {
+    opacity: 0.4;
+    transition: 0.3s ease;
+}
+
+.event-list h4,
+.event-list p {
+    text-align: center;
+    line-height: 30px;
+}
+.event-list div:nth-child(2) {
+    margin: 0 40px;
+}
+
+.event .event-list img {
+    width: 400px;
+    height: 380px;
+}
+
+.event .event-list .package-img {
+    width: 400px;
+    height: 380px;
+    overflow: hidden;
+}
+
+hr {
+    width: 1280px;
+    margin: 30px 0;
+}
+
+.btn {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(90,54,44);
+    margin-bottom: 250px;
+}
+
+.btn a {
+    color: #fff;
+}
+
+/* program */
+.program-list {
+    margin-left: 125px;
+}
+
+.program-list .face:hover,
+.program-list .campfire:hover {
+    transform: scale(1.03);
+}
+
+.program-list div {
+    display: flex;
+}
+
+.program-list .face {
+    margin-bottom: 40px;
+}
+
+.program-list .face-info,
+.program-list .fire-info {
+    display: block;
+    margin-left: 150px;
+}
+
+.program-list .face-info h4{
+    margin-top: 56px;
+    margin-bottom: 30px;
+}
+
+.program-list .campfire h4 {
+    margin-top: 63px;
+    margin-bottom: 28px;
+}
+
+.program-list p {
+    font-weight: 300;
+}
+
+
+/* middle-banner */
+.middle-banner {
+    width: 100%;
+    position: relative;
+    background: #5a362c;
+    overflow: hidden;
+    height: 550px;
+    display: flex;
+}
+
+.middle-banner .left-side {
+    position: relative;
+    width: 50%;
+    height: 550px;
+}
+
+.middle-banner .left-text {
+    z-index: 10;
+    word-break: keep-all;
+}
+
+.middle-banner .member-benefit-detail {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 310px;
+    height: 70px;
+    text-align: center;
+    background: #38221c;
+    line-height: 70px;
+}
+
+.middle-banner .member-benefit-detail a {
+    color: #fff;
+    letter-spacing: -0.1px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.middle-banner .member-benefit-detail img {
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.middle-banner .right-side {
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.middle-banner h2 {
+    text-align: left;
+    color: rgb(178,140,130);
+    letter-spacing: 0.2em;
+    font-size: 33px;
+    padding-top: 83px;
+}
+
+.middle-banner h3 {
+    text-align: left;
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 65px;
+    color: #fff;
+}
+
+.middle-banner p {
+    color: #fff;
+    line-height: 36px;
+}
+
+/* .middle-banner {
+    width: 100%;
+    padding-top : 80px;
+    padding-bottom: 105px;
+    background: url(../image/whole_view.jpg) right top no-repeat ;
+    background-size: cover;
+}
+
+.middle-text {
+    position: relative;
+    width: 33.3333333%;
+}
+
+.member-benefit-detail {
+    position: absolute;
+    padding: 22px;
+    background-color: #38221c;
+    font-size: 22px;
+}
+
+.middle-banner h2 {
+    text-align: left;
+    color: rgb(178,140,130);
+    letter-spacing: 20px;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+
+.middle-banner h3 {
+    text-align: left;
+    font-size: 33px;
+    margin-bottom: 65px;
+    color: #fff;
+}
+
+.middle-banner p {
+    color: #fff;
+    line-height: 36px;
+} */
+
+
+
+/* room */
+.room {
+    margin-top: 250px;
+}
+
+.room-flexbox {
+    display: flex;
+}
+
+.room-list img {
+    width: 180px;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    opacity: 0.3;
+}
+
+.room-list img:last-child {
+    margin-bottom: 0;
+}
+
+.room-text {
+    opacity: 0.3;
+}
+
+.deluxe:hover .room-text,
+.family:hover .room-text,
+.suite:hover .room-text {
+    opacity: 1;
+    color: grey;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.room-list img:hover{
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+
+.deluxe,
+.family,
+.suite {
+    position: relative;
+}
+
+.deluxe p,
+.family p,
+.suite p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.room-info {
+    width: 440px;
+    margin: 0 20px;
+    height: 450px;
+    text-align: center;
+}
+
+.room-info h4 {
+    margin-top: 80px;
+    margin-bottom: 44px;
+    font-size: 18px;
+}
+
+.room-info p {
+    line-height: 34px;
+}
+
+.room-info .room-detail-info {
+    margin-top: 98px; 
+}
+.room-zoom img {
+    width: 620px;
+    height: 450px;
+}
+
+/* facility */
+
+.facility-flexbox ul {
+    display: flex;
+}
+
+.facility-list img {
+    width: 320px;
+    height: 700px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.facility-list img:hover {
+    opacity: 0.4;
+    transition: 0.3 ease;
+}
+.facility-list li {
+    position: relative;
+}
+
+.roof-top p,
+.restuarant p,
+.infinity-pool p,
+.cafe p {
+    position: absolute;
+    vertical-align: middle;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: lighter;
+}
+
+/* footer */
+footer {
+    background-color: #5a362c;
+    font-weight: 240px;
+    font-size: 16px;
+    color: #fff;
+    height: 238px;
+    margin-top: 250px;
+}
+
+footer .footer-flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo {
+    margin: auto 0;
+}
+
+footer .footer-info {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 40px 0;
+}
+
+.footer-company .footer-company-law {
+    display: block;
+    margin-top: 50px;
+}
+
+.footer-company .footer-company-law li {
+    display: inline-block;
+    padding-right: 5px;
+    border-right: 1px solid #fff;
+}
+.footer-company .footer-company-law a {
+    color: #fff;
+    font-weight: 100;
+}
+
+footer .sns {
+    float: right;
+    margin-top: 10px;
+}
+
+footer .sns a {
+    margin-left: 20px;
+}
+
+footer .family-site {
+    clear: both;
+    margin-top: 50px;
+}
+
+.pageup_btn img {
+    position: fixed;
+    right: 80px;
+    bottom: 100px;
+    width: 50px;
+}
+
+
+@media all and (max-width: 768px) {
+    .confix {
+        width: 650px;
+        margin: 0 auto;
+    }
+
+    /* header */
+    .header-flex img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .header-flex .small-nav ul {
+        display: none;
+    }
+
+    .header-flex .main-nav a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    /* article */
+    article .main-img img {
+        width: 100%;
+        height: 500px;
+    } 
+
+    article .main-img h1 {
+        font-size: 30px;
+    }
+
+    article .main-img h2 {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    article .reserve-bar {
+        display: none;
+    }
+    
+    /* main */
+    /* event*/
+    main .event h2 {
+        font-size: 25px;
+    }
+
+    main .event h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .event .event-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event .event-list .beer-text,
+    .event .event-list .kids-text,
+    .event .event-list .breakfast-text {
+        display: none;
+    }
+
+    /* program */
+    .program h2 {
+        font-size: 25px;
+    }
+
+    .program h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .program-list {
+        margin: 0;
+    }
+
+    .program-list div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .program-list div img {
+        margin: 0 auto;
+    }
+
+    .program-list div .face-info,
+    .program-list div .fire-info {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        text-align: center;
+    }
+} 

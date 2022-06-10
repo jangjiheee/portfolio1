@@ -4,42 +4,16 @@
 
 
 //header
-header {
-    width:100%;
-    
+header { 
     .logo-menu {
         .confix {
             background-color: bisque;
             @include confix();
             .header-flex {
-                a {
+                .main-logo {
+                    text-align: center;
                     img {
-                        display: block;
-                        margin: 0 auto;
-                        @include responsive(pc-size) {
-                            display: inline-block;
-                        }
-                    }
-                }
-                .menu {
-                    .small-nav {
-                        ul {
-                            li {
-                            display: none;
-                            @include responsive(pc-size) {
-                                display: inline-block;
-                                float: right;
-                                    margin: 30px 0;
-                                }
-                            }
-                        }
-                    }
-                    .main-nav {
-                        .gnb {
-                            li {
-                                display: inline-block;
-                            }
-                        }
+                        width: 40%;
                     }
                 }
             }

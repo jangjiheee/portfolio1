@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul, li, ol {
@@ -27,17 +26,144 @@ h2 {
 }
 
 header .logo-menu .confix {
-  background-color: bisque;
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
 }
-
+header .logo-menu .confix .header-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 0 10px;
+}
+@media screen and (min-width: 768px) {
+  header .logo-menu .confix .header-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 30px 0 30px;
+    height: 100px;
+  }
+}
 header .logo-menu .confix .header-flex .main-logo {
   text-align: center;
+  width: 100%;
+}
+header .logo-menu .confix .header-flex .main-logo img {
+  width: 30%;
+}
+@media screen and (min-width: 768px) {
+  header .logo-menu .confix .header-flex .main-logo img {
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .logo-menu .confix .header-flex .main-logo {
+    width: 20%;
+    line-height: 90px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu .confix .header-flex .main-logo {
+    width: 15%;
+  }
+}
+header .logo-menu .confix .header-flex .menu {
+  margin: 10px 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  header .logo-menu .confix .header-flex .menu {
+    width: 73%;
+    vertical-align: middle;
+    line-height: 1.5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu .confix .header-flex .menu {
+    width: 75%;
+    vertical-align: middle;
+    line-height: 1.5em;
+  }
+}
+header .logo-menu .confix .header-flex .menu .small-nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .logo-menu .confix .header-flex .menu .small-nav {
+    display: block;
+    margin: 10px 0 30px 0;
+  }
+  header .logo-menu .confix .header-flex .menu .small-nav ul {
+    display: flex;
+    float: right;
+  }
+  header .logo-menu .confix .header-flex .menu .small-nav ul li {
+    padding: 0 13px;
+    font-size: 0.7em;
+    font-weight: 600;
+    border-right: 1px solid #000;
+  }
+  header .logo-menu .confix .header-flex .menu .small-nav ul li:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu .confix .header-flex .menu .small-nav {
+    margin: 10px 0 45px 0;
+  }
+}
+header .logo-menu .confix .header-flex .menu .main-nav {
+  width: 100%;
+}
+header .logo-menu .confix .header-flex .menu .main-nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  header .logo-menu .confix .header-flex .menu .main-nav ul {
+    clear: both;
+  }
+}
+header .logo-menu .confix .header-flex .menu .main-nav ul li {
+  font-size: 0.65em;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  header .logo-menu .confix .header-flex .menu .main-nav ul li {
+    font-size: 0.7em;
+  }
+  header .logo-menu .confix .header-flex .menu .main-nav ul li:last-child {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo-menu .confix .header-flex .menu .main-nav ul li {
+    font-size: 1.1em;
+    font-weight: 540;
+  }
 }
 
-header .logo-menu .confix .header-flex .main-logo img {
-  width: 40%;
+article .main-img {
+  position: relative;
 }
-/*# sourceMappingURL=index.css.map */
+article .main-img img {
+  width: 100%;
+}
+article .main-img .title {
+  position: absolute;
+  vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+article .main-img .title h1 {
+  width: 100%;
+  font-size: 1.2em;
+  color: #fff;
+}
+article .main-img .title h2 {
+  display: none;
+}/*# sourceMappingURL=index.css.map */

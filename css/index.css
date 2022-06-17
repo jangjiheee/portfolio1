@@ -44,11 +44,12 @@ header .logo-menu .confix .header-flex {
   }
 }
 header .logo-menu .confix .header-flex .main-logo {
+  margin-top: 15px;
   text-align: center;
   width: 100%;
 }
 header .logo-menu .confix .header-flex .main-logo img {
-  width: 30%;
+  width: 40%;
 }
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex .main-logo img {
@@ -58,6 +59,7 @@ header .logo-menu .confix .header-flex .main-logo img {
 }
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex .main-logo {
+    margin-top: 0;
     width: 20%;
     line-height: 90px;
   }
@@ -91,7 +93,7 @@ header .logo-menu .confix .header-flex .menu .small-nav {
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex .menu .small-nav {
     display: block;
-    margin: 10px 0 30px 0;
+    margin: 15px 0 30px 0;
   }
   header .logo-menu .confix .header-flex .menu .small-nav ul {
     display: flex;
@@ -142,7 +144,7 @@ header .logo-menu .confix .header-flex .menu .main-nav ul li {
 @media screen and (min-width: 1024px) {
   header .logo-menu .confix .header-flex .menu .main-nav ul li {
     font-size: 1.1em;
-    font-weight: 540;
+    font-weight: 600;
   }
 }
 
@@ -154,7 +156,8 @@ article .main-img img {
 }
 article .main-img .title {
   position: absolute;
-  vertical-align: middle;
+  text-align: center;
+  color: #fff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -162,8 +165,48 @@ article .main-img .title {
 article .main-img .title h1 {
   width: 100%;
   font-size: 1.2em;
-  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  article .main-img .title h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  article .main-img .title h1 {
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+  }
 }
 article .main-img .title h2 {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  article .main-img .title h2 {
+    display: block;
+    font-size: 0.7em;
+    line-height: 1.6em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  article .main-img .title h2 {
+    font-size: 0.9em;
+    line-height: 1.8em;
+  }
+}
+article .reserve-bar {
+  background-color: #5a362c;
+}
+article .reserve-bar .confix .reserve-confix .reservation ul {
+  height: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+article .reserve-bar .confix .reserve-confix .reservation ul p {
+  vertical-align: middle;
+}
+article .reserve-bar .confix .reserve-confix .reservation ul li a {
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

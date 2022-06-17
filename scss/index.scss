@@ -22,10 +22,11 @@ header {
                 }
                 
                 .main-logo {
+                    margin-top: 15px;
                     text-align: center;
-                    width: 100%;              
+                    width: 100%;         
                     img {
-                        width: 30%;
+                        width: 40%;
                         @include responsive(tablet-size) {
                             width: 100%;
                             vertical-align: middle;
@@ -33,6 +34,7 @@ header {
                     }
 
                     @include responsive(tablet-size) {
+                        margin-top: 0;
                         width: 20%;
                         line-height: 90px;
                     }
@@ -60,7 +62,7 @@ header {
                         display: none;
                         @include responsive(tablet-size) {
                             display: block;
-                            margin: 10px 0 30px 0;
+                            margin: 15px 0 30px 0;
                             ul {
                                 display: flex;
                                 float: right;
@@ -105,7 +107,7 @@ header {
                                 }
                                 @include responsive(pc-size) {
                                     font-size: 1.1em;
-                                    font-weight: 540;
+                                    font-weight: 600;
                                 }
                             }
                         }
@@ -126,7 +128,8 @@ article {
         }
         .title {
             position: absolute;
-            vertical-align: middle;
+            text-align: center;
+            color: $white;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -134,10 +137,51 @@ article {
             h1 {
                 width: 100%;
                 font-size: 1.2em;
-                color: $white;
+                @include responsive(tablet-size) {
+                    font-size: 1.8em;
+                    margin-bottom: 10px;
+                }
+                @include responsive(pc-size) {
+                    font-size: 2.6rem;
+                    margin-bottom: 20px;
+                }
             }
             h2 {
                 display: none;
+                @include responsive(tablet-size) {
+                    display: block;
+                    font-size: 0.7em;
+                    line-height: 1.6em;
+                }
+                @include responsive(pc-size) {
+                    font-size: 0.9em;
+                    line-height: 1.8em;
+                }
+            }
+        }
+    }
+
+    .reserve-bar {
+        background-color: $brown;
+        .confix {
+            .reserve-confix {
+                .reservation {
+                    ul {
+                        height: 100px;
+                        color: $white;
+                        display: flex;
+                        justify-content: space-around;
+                        text-align: left;
+                        p {
+                            vertical-align: middle;
+                        }
+                        li {
+                            a{ 
+                                color:$white;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

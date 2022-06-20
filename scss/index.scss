@@ -167,17 +167,53 @@ article {
             .reserve-confix {
                 .reservation {
                     ul {
-                        height: 100px;
+                        height: 140px;
                         color: $white;
                         display: flex;
                         justify-content: space-around;
                         text-align: left;
-                        p {
-                            vertical-align: middle;
+
+                        @include responsive(tablet-size) {
+                            height: 80px;
+                            justify-content: start;
+                            width: 100%;
                         }
-                        li {
-                            a{ 
-                                color:$white;
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            @include responsive(tablet-size) {
+                                width: 25%;
+                            }
+                        }
+
+                        .li-flex {
+                            display: flex;
+                            flex-direction: column;
+
+                            @include responsive(tablet-size) {
+                                flex-direction: row;
+                            }
+
+                            li {
+                                margin: 5px 0;
+                                a{ 
+                                    color:$white;
+                                    line-height: 24px;
+                                }
+                                img {
+                                    margin-right: 15px;
+                                    transform: translateY(25%);
+                                }
+                                &:nth-child(3) {
+                                    img {
+                                        width: 30px;
+                                    }
+                                }
+                                @include responsive(tablet-size) {
+                                    display: flex;
+                                }
                             }
                         }
                     }

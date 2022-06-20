@@ -18,11 +18,15 @@ body, html {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 4.5em;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 header .logo-menu .confix {
@@ -153,6 +157,7 @@ article .main-img {
 }
 article .main-img img {
   width: 100%;
+  max-height: 850px;
 }
 article .main-img .title {
   position: absolute;
@@ -168,34 +173,51 @@ article .main-img .title h1 {
 }
 @media screen and (min-width: 768px) {
   article .main-img .title h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1024px) {
   article .main-img .title h1 {
-    font-size: 2.6rem;
+    font-size: 4.5em;
     margin-bottom: 20px;
   }
 }
-article .main-img .title h2 {
+article .main-img .title p {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  article .main-img .title h2 {
+  article .main-img .title p {
     display: block;
     font-size: 0.7em;
     line-height: 1.6em;
   }
 }
 @media screen and (min-width: 1024px) {
-  article .main-img .title h2 {
+  article .main-img .title p {
     font-size: 0.9em;
     line-height: 1.8em;
   }
 }
 article .reserve-bar {
   background-color: #5a362c;
+  transform: translateY(-4px);
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  article .reserve-bar {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  article .reserve-bar {
+    margin-bottom: 250px;
+  }
+}
+article .reserve-bar .confix {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 article .reserve-bar .confix .reserve-confix .reservation ul {
   height: 140px;
@@ -207,7 +229,6 @@ article .reserve-bar .confix .reserve-confix .reservation ul {
 @media screen and (min-width: 768px) {
   article .reserve-bar .confix .reserve-confix .reservation ul {
     height: 80px;
-    justify-content: start;
   }
 }
 article .reserve-bar .confix .reserve-confix .reservation ul p {
@@ -217,7 +238,7 @@ article .reserve-bar .confix .reserve-confix .reservation ul p {
 }
 @media screen and (min-width: 768px) {
   article .reserve-bar .confix .reserve-confix .reservation ul p {
-    width: 25%;
+    width: 20%;
   }
 }
 article .reserve-bar .confix .reserve-confix .reservation ul .li-flex {
@@ -227,6 +248,15 @@ article .reserve-bar .confix .reserve-confix .reservation ul .li-flex {
 @media screen and (min-width: 768px) {
   article .reserve-bar .confix .reserve-confix .reservation ul .li-flex {
     flex-direction: row;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  article .reserve-bar .confix .reserve-confix .reservation ul .li-flex {
+    width: 70%;
+    justify-content: space-between;
   }
 }
 article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li {
@@ -245,6 +275,208 @@ article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li:nth-chi
 }
 @media screen and (min-width: 768px) {
   article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li {
-    width: 25%;
+    display: flex;
+    transform: translateY(-25%);
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+main {
+  text-align: center;
+}
+main .event {
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  main .event {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .event {
+    margin-bottom: 250px;
+  }
+}
+main .event .confix {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+main .event .confix h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+main .event .confix p {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+main .event .confix .event-list .beer {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .event .confix .event-list .beer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .beer {
+    flex-direction: column;
+    width: 30%;
+  }
+}
+main .event .confix .event-list .beer .img-box a img {
+  opacity: 1;
+}
+main .event .confix .event-list .beer .img-box a img:hover {
+  opacity: 0.7;
+  transition: 0.5s ease-out;
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .beer .img-box a img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .event .confix .event-list .beer .beer-text {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .beer .beer-text {
+    margin-left: 0;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .event .confix .event-list .beer .beer-text .text-position {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .beer .beer-text .text-position {
+    text-align: center;
+  }
+}
+main .event .confix .event-list .kids {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .event .confix .event-list .kids {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .kids {
+    flex-direction: column;
+    width: 30%;
+  }
+}
+main .event .confix .event-list .kids .img-box a img {
+  opacity: 1;
+}
+main .event .confix .event-list .kids .img-box a img:hover {
+  opacity: 0.7;
+  transition: 0.5s ease-out;
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .kids .img-box a img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .event .confix .event-list .kids .kids-text {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .kids .kids-text {
+    margin-left: 0;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .event .confix .event-list .kids .kids-text .text-position {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .kids .kids-text .text-position {
+    text-align: center;
+  }
+}
+main .event .confix .event-list .breakfast {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .event .confix .event-list .breakfast {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .breakfast {
+    flex-direction: column;
+    width: 30%;
+  }
+}
+main .event .confix .event-list .breakfast .img-box a img {
+  opacity: 1;
+}
+main .event .confix .event-list .breakfast .img-box a img:hover {
+  opacity: 0.7;
+  transition: 0.5s ease-out;
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .breakfast .img-box a img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .event .confix .event-list .breakfast .breakfast-text {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .breakfast .breakfast-text {
+    margin-left: 0;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .event .confix .event-list .breakfast .breakfast-text .text-position {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .event .confix .event-list .breakfast .breakfast-text .text-position {
+    text-align: center;
+  }
+}

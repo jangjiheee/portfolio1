@@ -261,11 +261,11 @@ main {
             @include confix();
             h2 {
                 font-size: 2em;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
             }
             p {
                 font-size: 0.8em;
-                margin-bottom: 10px;
+                margin-bottom: 30px;
             }
             .event-list {
                 @include responsive(pc-size) {
@@ -439,6 +439,107 @@ main {
                             }
                         }
                     }
+                }
+            }
+            hr {
+                @include hr();
+            }
+            .btn {
+                button {
+                    @include button();
+                }
+            }
+        }
+    }
+
+    .program {
+        margin-bottom: 100px;
+
+        @include responsive(tablet-size) {
+            margin-bottom: 120px;
+        }
+        @include responsive(tablet-size) {
+            margin-bottom: 250px;
+        }
+
+        .confix {
+            @include confix();
+            h2 {
+                font-size: 2em;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.8em;
+                margin-bottom: 80px;
+            }
+            .program-list {
+                .program-grid {
+                    @include responsive(pc-size) {
+                        width: 75%;
+                        margin: 0 auto;
+                    }
+                    a {
+                        .face,
+                        .campfire {
+                            display: flex;
+                            align-items: center;
+
+                            margin-bottom: 50px;
+                            transform: scale(0.96);
+                            transition-delay: 0.8s;
+                            transition: 0.3s ease-out;
+                            &:hover {
+                                transform: scale(1);
+                                transition: 0.2s ease-in;
+                            }
+    
+                            img {
+                                @include responsive(tablet-size) {
+                                    width: 40%;
+                                }
+                                @include responsive(pc-size) {
+                                    width: 25%;
+                                }
+                            }
+    
+                            div {
+                                width: 270px;
+                                margin: 0 auto;
+                                h4 {
+                                    margin: 15px 0 10px 0;
+                                    @include responsive(tablet-size) {
+                                        text-align: left;
+                                        margin-top: 0;
+                                    }
+                                }
+    
+                                p {
+                                    margin: 0 auto;
+                                    text-align: left;
+                                }
+    
+                                @include responsive(tablet-size) {
+                                    width: 50%;
+                                }
+                            }
+                            @include responsive(tablet-size) {
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            @include responsive(tablet-size) {
+                                justify-content: space-around;
+                            }
+                        }
+                    }
+                }
+            }
+
+            hr {
+                @include hr();
+            }
+            .btn {
+                button {
+                    @include button();
                 }
             }
         }

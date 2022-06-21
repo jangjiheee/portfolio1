@@ -1,8 +1,28 @@
 @mixin confix() {
     width: 100%;
-    max-width: 1320px;
     margin: 0 auto;
+    padding: 0 7%;
+
+    @include responsive(pc-size) {
+        max-width: 1320px;
+        padding: 0;
+    }
     // background-color: skyblue;
+}
+@mixin hr() {
+    background-color: $line-color;
+    border: 0;
+    height: 1px;
+    margin: 0 auto 30px auto;
+}
+@mixin button() {
+    width: 200px;
+    height: 55px;
+    cursor: pointer;
+    border-radius: 0;
+    border: 0;
+    background-color: $brown;
+    color: $white;
 }
 
 @mixin responsive($break) {

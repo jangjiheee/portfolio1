@@ -208,7 +208,7 @@ article .main-img .title p {
 article .reserve-bar {
   background-color: #5a362c;
   transform: translateY(-4px);
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 @media screen and (min-width: 768px) {
   article .reserve-bar {
@@ -217,7 +217,7 @@ article .reserve-bar {
 }
 @media screen and (min-width: 768px) {
   article .reserve-bar {
-    margin-bottom: 250px;
+    margin-bottom: 300px;
   }
 }
 article .reserve-bar .confix {
@@ -296,7 +296,7 @@ main {
   text-align: center;
 }
 main .event {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 @media screen and (min-width: 768px) {
   main .event {
@@ -305,7 +305,7 @@ main .event {
 }
 @media screen and (min-width: 768px) {
   main .event {
-    margin-bottom: 250px;
+    margin-bottom: 300px;
   }
 }
 main .event .confix {
@@ -325,7 +325,12 @@ main .event .confix h2 {
 }
 main .event .confix p {
   font-size: 0.8em;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .event .confix p {
+    font-size: 1em;
+  }
 }
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list {
@@ -514,7 +519,7 @@ main .event .confix .btn button {
   color: #fff;
 }
 main .program {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 @media screen and (min-width: 768px) {
   main .program {
@@ -523,7 +528,7 @@ main .program {
 }
 @media screen and (min-width: 768px) {
   main .program {
-    margin-bottom: 250px;
+    margin-bottom: 300px;
   }
 }
 main .program .confix {
@@ -543,7 +548,12 @@ main .program .confix h2 {
 }
 main .program .confix p {
   font-size: 0.8em;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .program .confix p {
+    font-size: 1em;
+  }
 }
 @media screen and (min-width: 1024px) {
   main .program .confix .program-list .program-grid {
@@ -639,22 +649,397 @@ main .program .confix .btn button {
   background-color: #5a362c;
   color: #fff;
 }
-main .middle-banner .left-side {
+main .middle-banner {
+  display: flex;
+  flex-direction: column;
   background-color: #5a362c;
+  margin-bottom: 150px;
+}
+@media screen and (min-width: 768px) {
+  main .middle-banner {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .middle-banner {
+    margin-bottom: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .middle-banner {
+    flex-direction: row;
+  }
+}
+main .middle-banner .left-side {
   text-align: left;
   padding: 80px 0;
+  position: relative;
 }
-main .middle-banner .left-side .confix {
+@media screen and (min-width: 1024px) {
+  main .middle-banner .left-side {
+    width: 50%;
+  }
+}
+main .middle-banner .left-side .confix .left-text {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
 }
 @media screen and (min-width: 1024px) {
-  main .middle-banner .left-side .confix {
+  main .middle-banner .left-side .confix .left-text {
     max-width: 1320px;
     padding: 0;
   }
 }
+@media screen and (min-width: 1024px) {
+  main .middle-banner .left-side .confix .left-text {
+    width: 50%;
+  }
+}
 main .middle-banner .left-side .confix .left-text h2 {
   color: #b28c82;
-}/*# sourceMappingURL=index.css.map */
+  letter-spacing: 0.1em;
+}
+main .middle-banner .left-side .confix .left-text h3 {
+  margin: 30px 0 70px 0;
+  color: #fff;
+  font-size: 2.05em;
+}
+main .middle-banner .left-side .confix .left-text p {
+  line-height: 2em;
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 40px;
+}
+main .middle-banner .left-side .confix .member-benefit-detail {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 25px 40px;
+  background-color: #38221c;
+}
+main .middle-banner .left-side .confix .member-benefit-detail a {
+  font-size: 1.375em;
+  font-weight: 600;
+  color: #fff;
+}
+main .middle-banner .right-side {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  main .middle-banner .right-side {
+    display: block;
+    width: 50%;
+    float: right;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .middle-banner .right-side img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+main .room {
+  margin-bottom: 150px;
+}
+@media screen and (min-width: 768px) {
+  main .room {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .room {
+    margin-bottom: 300px;
+  }
+}
+main .room .confix {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+}
+@media screen and (min-width: 1024px) {
+  main .room .confix {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+main .room .confix h2 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+main .room .confix h2 + p {
+  font-size: 0.8em;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .room .confix h2 + p {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .room .confix .room-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .room .confix .room-flexbox {
+    justify-content: space-between;
+  }
+}
+main .room .confix .room-flexbox .room-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+main .room .confix .room-flexbox .room-list ul li {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  height: 140px;
+  margin: 10px auto;
+}
+@media screen and (min-width: 768px) {
+  main .room .confix .room-flexbox .room-list ul li {
+    margin: 30px auto;
+  }
+}
+main .room .confix .room-flexbox .room-list ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+main .room .confix .room-flexbox .room-list ul li a figure {
+  width: 100%;
+  height: 100%;
+}
+main .room .confix .room-flexbox .room-list ul li a figure figcaption {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 140px;
+  opacity: 0;
+  transition: 0.4s;
+  font-weight: 200;
+}
+main .room .confix .room-flexbox .room-list ul li a:hover figcaption {
+  opacity: 1;
+}
+main .room .confix .room-flexbox .room-list a img {
+  position: relative;
+}
+main .room .confix .room-flexbox .room-list p {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1024px) {
+  main .room .confix .room-flexbox .room-info-img {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+main .room .confix .room-flexbox .room-info-img .room-info {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  main .room .confix .room-flexbox .room-info-img .room-info {
+    display: block;
+  }
+}
+main .room .confix .room-flexbox .room-info-img .room-info h4 {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  main .room .confix .room-flexbox .room-info-img .room-info h4 {
+    margin: 80px 0;
+  }
+}
+main .room .confix .room-flexbox .room-info-img .room-info p {
+  font-size: 0.9em;
+  margin: 0 auto;
+}
+main .room .confix .room-flexbox .room-info-img .room-info .room-detail-info {
+  margin: 10px 0;
+}
+main .room .confix .room-flexbox .room-info-img .room-zoom {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  main .room .confix .room-flexbox .room-info-img .room-zoom {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .room .confix .room-flexbox .room-info-img .room-zoom img {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .room .confix .room-flexbox .room-info-img .room-zoom img {
+    width: 100%;
+  }
+}
+main .room hr {
+  background-color: #828181;
+  border: 0;
+  height: 1px;
+  margin: 0 auto 30px auto;
+}
+main .room .btn button {
+  width: 200px;
+  height: 55px;
+  cursor: pointer;
+  border-radius: 0;
+  border: 0;
+  background-color: #5a362c;
+  color: #fff;
+}
+main .facility {
+  margin-bottom: 150px;
+}
+@media screen and (min-width: 768px) {
+  main .facility {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .facility {
+    margin-bottom: 300px;
+  }
+}
+main .facility .confix {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+}
+@media screen and (min-width: 1024px) {
+  main .facility .confix {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+main .facility .confix h2 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+main .facility .confix p {
+  font-size: 0.8em;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .facility .confix p {
+    font-size: 1em;
+  }
+}
+main .facility .confix .facility-flexbox {
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  main .facility .confix .facility-flexbox .facility-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .facility .confix .facility-flexbox .facility-list ul {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+main .facility .confix .facility-flexbox .facility-list ul div li {
+  position: relative;
+}
+main .facility .confix .facility-flexbox .facility-list ul div li img:hover {
+  opacity: 0.7;
+  transform: translate(0, -5px);
+  transition: 0.3s ease;
+}
+main .facility .confix .facility-flexbox .facility-list ul div p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #5a362c;
+}
+footer .logo-footer-text-footer-menu {
+  color: #fff;
+}
+footer .logo-footer-text-footer-menu .confix {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+}
+@media screen and (min-width: 1024px) {
+  footer .logo-footer-text-footer-menu .confix {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+footer .logo-footer-text-footer-menu .confix .footer-flexbox .logo {
+  text-align: center;
+  padding-top: 45px;
+}
+footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-info {
+  margin: 50px 0;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+  font-weight: 100;
+  font-size: 0.75em;
+}
+footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-company .footer-company-law ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-company .footer-company-law ul li {
+  font-weight: 600;
+  font-size: 0.75em;
+}
+footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-company .footer-company-law ul li a {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-company .footer-company-law ul li {
+    margin-left: 10px;
+  }
+}
+footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-company .footer-right-align {
+  text-align: right;
+  padding-bottom: 45px;
+}
+footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-company .footer-right-align .sns {
+  margin: 10px 0 5px 0;
+}
+@media screen and (min-width: 768px) {
+  footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-company {
+    margin: 50px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}

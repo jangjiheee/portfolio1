@@ -165,13 +165,13 @@ article {
     .reserve-bar {
         background-color: $brown;
         transform: translateY(-4px);
-        margin-bottom: 100px;
+        margin-bottom: 150px;
 
         @include responsive(tablet-size) {
             margin-bottom: 120px;
         }
         @include responsive(tablet-size) {
-            margin-bottom: 250px;
+            margin-bottom: 300px;
         }
 
         .confix {
@@ -248,13 +248,13 @@ main {
     text-align: center;
 
     .event {
-        margin-bottom: 100px;
+        margin-bottom: 150px;
 
         @include responsive(tablet-size) {
             margin-bottom: 120px;
         }
         @include responsive(tablet-size) {
-            margin-bottom: 250px;
+            margin-bottom: 300px;
         }
 
         .confix {
@@ -265,7 +265,10 @@ main {
             }
             p {
                 font-size: 0.8em;
-                margin-bottom: 30px;
+                margin-bottom: 50px;
+                @include responsive(tablet-size) {
+                    font-size: 1em;
+                }
             }
             .event-list {
                 @include responsive(pc-size) {
@@ -453,13 +456,13 @@ main {
     }
 
     .program {
-        margin-bottom: 100px;
+        margin-bottom: 150px;
 
         @include responsive(tablet-size) {
             margin-bottom: 120px;
         }
         @include responsive(tablet-size) {
-            margin-bottom: 250px;
+            margin-bottom: 300px;
         }
 
         .confix {
@@ -470,7 +473,10 @@ main {
             }
             p {
                 font-size: 0.8em;
-                margin-bottom: 80px;
+                margin-bottom: 50px;
+                @include responsive(tablet-size) {
+                    font-size: 1em;
+                }
             }
             .program-list {
                 .program-grid {
@@ -550,17 +556,379 @@ main {
     }
 
     .middle-banner {
+        display: flex;
+        flex-direction: column;
+        background-color: $brown;
+        margin-bottom: 150px;
+
+        @include responsive(tablet-size) {
+            margin-bottom: 120px;
+        }
+        @include responsive(tablet-size) {
+            margin-bottom: 300px;
+        }
+        
+        @include responsive(pc-size) {
+            flex-direction: row;
+        }
+        
         .left-side {
-            background-color: $brown;
             text-align: left;
             padding: 80px 0;
-
-            .confix {
-                @include confix();
-
+            position: relative;
+            // @include confix();
+            @include responsive(pc-size) {
+                width: 50%;
+            }
+                        
+            .confix {     
                 .left-text {
+                    @include confix();
+                    @include responsive(pc-size) {
+                        width: 50%;
+                    }
+
                     h2 {
                         color: $mem-color;
+                        letter-spacing: 0.1em;
+                        @include responsive(tabelt-size) {
+                            letter-spacing: 0.2em;
+                        }
+                    }
+                    h3 {
+                        margin: 30px 0 70px 0;
+                        color: $white;
+                        font-size: 2.05em;
+                    }
+                    p {
+                        line-height: 2em;
+                        color: $white;
+                        font-size: 1em;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .member-benefit-detail {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    padding: 25px 40px;
+                    background-color: $dark-brown;
+                    a {
+                        font-size: 1.375em;
+                        font-weight: 600;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .right-side {
+            display: none;
+
+            @include responsive(pc-size) {
+                display: block;
+                width: 50%;
+                float: right;
+                overflow: hidden;
+            }
+
+            img {
+                @include responsive(pc-size) {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .room {
+        margin-bottom: 150px;
+
+        @include responsive(tablet-size) {
+            margin-bottom: 120px;
+        }
+        @include responsive(tablet-size) {
+            margin-bottom: 300px;
+        }
+
+        .confix {
+            @include confix();
+            h2 {
+                font-size: 2em;
+                margin-bottom: 5px;
+            }
+            h2 + p {
+                font-size: 0.8em;
+                margin-bottom: 50px;
+                @include responsive(tablet-size) {
+                    font-size: 1em;
+                }
+            }
+
+            .room-flexbox {
+                @include responsive(tablet-size) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+                @include responsive(pc-size) {
+                    justify-content: space-between;
+                }
+
+                .room-list {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin:  0 auto;
+                    
+                    @include responsive(table-size) {
+                        margin-top: auto;
+                        margin-bottom: 5px;
+                    }
+
+                    ul {
+                        li {
+                            display: flex;
+                            flex-direction: column;
+                            width: 175px;
+                            height: 140px;
+                            margin: 10px auto;
+                            @include responsive(tablet-size) {
+                                margin: 30px auto;
+                            }
+                            
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+                                position: relative;
+
+                                figure {
+                                    width: 100%;
+                                    height: 100%;
+
+                                    figcaption {
+                                        width: 100%;
+                                        height: 100%;
+                                        background-color: rgba(0,0,0,0.7);
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        color: $white;
+                                        text-align: center;
+                                        line-height: 140px;
+                                        opacity: 0;
+                                        transition: 0.4s;
+                                        font-weight: 200;
+                                    }
+                                }
+
+                                &:hover {
+                                    figcaption {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        img {
+                            position: relative;
+                        }
+                    }
+
+                    p {
+                        color: $white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                .room-info-img {
+                    @include responsive(pc-size) {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+
+                    .room-info {
+                        display: none;
+                        @include responsive(tablet-size) {
+                            display: block;
+                        }
+                        h4 {
+                            font-size: 1.1em;
+                            margin-bottom: 20px;
+                            @include responsive(pc-size) {
+                                margin: 80px 0;
+                            }
+                        }
+                        p {
+                            font-size: 0.9em;
+                            margin: 0 auto;
+                        }
+                        .room-detail-info {
+                            margin: 10px 0;
+                        }
+                    }
+    
+                    .room-zoom {
+                        display: none;
+                        
+                        @include responsive(tablet-size) {
+                            display: block;
+                        }
+                        
+                        img {
+                            @include responsive(tablet-size) {
+                                width: 90%;
+                            }
+                            @include responsive(pc-size) {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        hr {
+            @include hr();
+        }
+        .btn {
+            button {
+                @include button();
+            }
+        }
+    }
+
+    .facility {
+        margin-bottom: 150px;
+
+        @include responsive(tablet-size) {
+            margin-bottom: 120px;
+        }
+        @include responsive(tablet-size) {
+            margin-bottom: 300px;
+        }
+
+        .confix {
+            @include confix();
+            h2 {
+                font-size: 2em;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 0.8em;
+                margin-bottom: 50px;
+                @include responsive(tablet-size) {
+                    font-size: 1em;
+                }
+            }
+
+            .facility-flexbox {
+                margin: 0 auto;
+                .facility-list {
+                    ul {
+                        @include responsive(tablet-size) {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+
+                        @include responsive(pc-size) {
+                            display: flex;
+                            flex-wrap: nowrap;
+                        }
+                        div {
+                           li {
+                            position: relative;
+                            img {
+                                &:hover {
+                                    opacity: 0.7;
+                                    transform: translate(0, -5px);
+                                    transition: 0.3s ease;
+                                }
+                            }
+                           } 
+
+                           p {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            color: $black;
+                            font-weight: 500;
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//footer
+footer {
+    background-color: #5a362c;
+    .logo-footer-text-footer-menu {
+        color: $white;
+        .confix {
+            @include confix();
+
+            .footer-flexbox {
+                .logo {
+                    text-align: center;
+                    padding-top: 45px;
+                }
+
+                .footer-flex-tablet {
+                    .footer-info {
+                        margin: 50px 0;
+                        margin-bottom: 30px;
+                        line-height: 1.5em;
+                        font-weight: 100;
+                        font-size: 0.75em;
+                    }
+    
+                    .footer-company {
+                        .footer-company-law {
+                            ul {
+                                display: flex;
+                                justify-content: space-between;
+                                li {
+                                    font-weight: 600;
+                                    font-size: 0.75em;
+                                    a {
+                                        color: $white;
+                                    }
+
+                                    @include responsive(tablet-size) {
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .footer-right-align {
+                           text-align: right;
+                           padding-bottom: 45px;
+                           .sns {
+                            margin: 10px 0 5px 0;
+                           }
+                        }
+
+                        @include responsive(tablet-size) {
+                            margin: 50px 0;
+                        }
+                    }
+
+                    @include responsive(tablet-size) {
+                        display: flex;
+                        justify-content: space-between;
                     }
                 }
             }

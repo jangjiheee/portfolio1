@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul, li, ol {
@@ -35,56 +34,39 @@ header .logo-menu .confix {
   margin: 0 auto;
   padding: 0 7%;
 }
-
 @media screen and (min-width: 1024px) {
   header .logo-menu .confix {
     max-width: 1320px;
     padding: 0;
   }
 }
-
 header .logo-menu .confix .header-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0 10px 0 10px;
 }
-
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 0 30px 0 30px;
     height: 100px;
   }
 }
-
 header .logo-menu .confix .header-flex .main-logo {
   margin-top: 15px;
   text-align: center;
   width: 100%;
 }
-
 header .logo-menu .confix .header-flex .main-logo img {
   width: 40%;
 }
-
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex .main-logo img {
     width: 100%;
     vertical-align: middle;
   }
 }
-
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex .main-logo {
     margin-top: 0;
@@ -92,18 +74,15 @@ header .logo-menu .confix .header-flex .main-logo img {
     line-height: 90px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   header .logo-menu .confix .header-flex .main-logo {
     width: 15%;
   }
 }
-
 header .logo-menu .confix .header-flex .menu {
   margin: 10px 0;
   width: 100%;
 }
-
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex .menu {
     width: 73%;
@@ -111,7 +90,6 @@ header .logo-menu .confix .header-flex .menu {
     line-height: 1.5em;
   }
 }
-
 @media screen and (min-width: 1024px) {
   header .logo-menu .confix .header-flex .menu {
     width: 75%;
@@ -119,19 +97,15 @@ header .logo-menu .confix .header-flex .menu {
     line-height: 1.5em;
   }
 }
-
 header .logo-menu .confix .header-flex .menu .small-nav {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex .menu .small-nav {
     display: block;
     margin: 15px 0 30px 0;
   }
   header .logo-menu .confix .header-flex .menu .small-nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     float: right;
   }
@@ -146,39 +120,29 @@ header .logo-menu .confix .header-flex .menu .small-nav {
     border-right: none;
   }
 }
-
 @media screen and (min-width: 1024px) {
   header .logo-menu .confix .header-flex .menu .small-nav {
     margin: 10px 0 45px 0;
   }
 }
-
 header .logo-menu .confix .header-flex .menu .main-nav {
   width: 100%;
 }
-
 header .logo-menu .confix .header-flex .menu .main-nav ul {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   text-align: center;
 }
-
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex .menu .main-nav ul {
     clear: both;
   }
 }
-
 header .logo-menu .confix .header-flex .menu .main-nav ul li {
   font-size: 0.65em;
   font-weight: 600;
 }
-
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex .menu .main-nav ul li {
     font-size: 0.7em;
@@ -187,7 +151,6 @@ header .logo-menu .confix .header-flex .menu .main-nav ul li {
     text-align: right;
   }
 }
-
 @media screen and (min-width: 1024px) {
   header .logo-menu .confix .header-flex .menu .main-nav ul li {
     font-size: 1.1em;
@@ -198,45 +161,37 @@ header .logo-menu .confix .header-flex .menu .main-nav ul li {
 article .main-img {
   position: relative;
 }
-
 article .main-img img {
   width: 100%;
   max-height: 850px;
 }
-
 article .main-img .title {
   position: absolute;
   text-align: center;
   color: #fff;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 article .main-img .title h1 {
   width: 100%;
   font-size: 1.2em;
 }
-
 @media screen and (min-width: 768px) {
   article .main-img .title h1 {
     font-size: 1.5em;
     margin-bottom: 10px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   article .main-img .title h1 {
     font-size: 4.5em;
     margin-bottom: 20px;
   }
 }
-
 article .main-img .title p {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   article .main-img .title p {
     display: block;
@@ -244,257 +199,178 @@ article .main-img .title p {
     line-height: 1.6em;
   }
 }
-
 @media screen and (min-width: 1024px) {
   article .main-img .title p {
     font-size: 0.9em;
     line-height: 1.8em;
   }
 }
-
 article .reserve-bar {
   background-color: #5a362c;
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
+  transform: translateY(-4px);
   margin-bottom: 100px;
 }
-
 @media screen and (min-width: 768px) {
   article .reserve-bar {
     margin-bottom: 120px;
   }
 }
-
 @media screen and (min-width: 768px) {
   article .reserve-bar {
     margin-bottom: 250px;
   }
 }
-
 article .reserve-bar .confix {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
 }
-
 @media screen and (min-width: 1024px) {
   article .reserve-bar .confix {
     max-width: 1320px;
     padding: 0;
   }
 }
-
 article .reserve-bar .confix .reserve-confix .reservation ul {
   height: 140px;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   text-align: left;
 }
-
 @media screen and (min-width: 768px) {
   article .reserve-bar .confix .reserve-confix .reservation ul {
     height: 80px;
   }
 }
-
 article .reserve-bar .confix .reserve-confix .reservation ul p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
 }
-
 @media screen and (min-width: 768px) {
   article .reserve-bar .confix .reserve-confix .reservation ul p {
     width: 20%;
   }
 }
-
 article .reserve-bar .confix .reserve-confix .reservation ul .li-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 @media screen and (min-width: 768px) {
   article .reserve-bar .confix .reserve-confix .reservation ul .li-flex {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     width: 60%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
   }
 }
-
 @media screen and (min-width: 1024px) {
   article .reserve-bar .confix .reserve-confix .reservation ul .li-flex {
     width: 70%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
 }
-
 article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li {
   margin: 5px 0;
 }
-
 article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li a {
   color: #fff;
   line-height: 24px;
 }
-
 article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li img {
   margin-right: 15px;
-  -webkit-transform: translateY(25%);
-          transform: translateY(25%);
+  transform: translateY(25%);
 }
-
 article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li:nth-child(3) img {
   width: 30px;
 }
-
 @media screen and (min-width: 768px) {
   article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+    transform: translateY(-25%);
   }
 }
 
 main {
   text-align: center;
 }
-
 main .event {
   margin-bottom: 100px;
 }
-
 @media screen and (min-width: 768px) {
   main .event {
     margin-bottom: 120px;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .event {
     margin-bottom: 250px;
   }
 }
-
 main .event .confix {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix {
     max-width: 1320px;
     padding: 0;
   }
 }
-
 main .event .confix h2 {
   font-size: 2em;
   margin-bottom: 5px;
 }
-
 main .event .confix p {
   font-size: 0.8em;
   margin-bottom: 30px;
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 }
-
 main .event .confix .event-list .beer {
   margin-bottom: 50px;
 }
-
 @media screen and (min-width: 768px) {
   main .event .confix .event-list .beer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 50px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .beer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 30%;
   }
 }
-
 main .event .confix .event-list .beer .img-box a img {
   opacity: 1;
 }
-
 main .event .confix .event-list .beer .img-box a img:hover {
   opacity: 0.7;
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .beer .img-box a img {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .event .confix .event-list .beer .beer-text {
     margin-left: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 35%;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .beer .beer-text {
     margin-left: 0;
@@ -502,81 +378,54 @@ main .event .confix .event-list .beer .img-box a img:hover {
     margin: auto;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .event .confix .event-list .beer .beer-text .text-position {
     text-align: left;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .beer .beer-text .text-position {
     text-align: center;
   }
 }
-
 main .event .confix .event-list .kids {
   margin-bottom: 50px;
 }
-
 @media screen and (min-width: 768px) {
   main .event .confix .event-list .kids {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 50px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .kids {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 30%;
   }
 }
-
 main .event .confix .event-list .kids .img-box a img {
   opacity: 1;
 }
-
 main .event .confix .event-list .kids .img-box a img:hover {
   opacity: 0.7;
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .kids .img-box a img {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .event .confix .event-list .kids .kids-text {
     margin-left: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 35%;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .kids .kids-text {
     margin-left: 0;
@@ -584,81 +433,54 @@ main .event .confix .event-list .kids .img-box a img:hover {
     margin: auto;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .event .confix .event-list .kids .kids-text .text-position {
     text-align: left;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .kids .kids-text .text-position {
     text-align: center;
   }
 }
-
 main .event .confix .event-list .breakfast {
   margin-bottom: 50px;
 }
-
 @media screen and (min-width: 768px) {
   main .event .confix .event-list .breakfast {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 50px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .breakfast {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 30%;
   }
 }
-
 main .event .confix .event-list .breakfast .img-box a img {
   opacity: 1;
 }
-
 main .event .confix .event-list .breakfast .img-box a img:hover {
   opacity: 0.7;
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .breakfast .img-box a img {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .event .confix .event-list .breakfast .breakfast-text {
     margin-left: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 35%;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .breakfast .breakfast-text {
     margin-left: 0;
@@ -666,26 +488,22 @@ main .event .confix .event-list .breakfast .img-box a img:hover {
     margin: auto;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .event .confix .event-list .breakfast .breakfast-text .text-position {
     text-align: left;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main .event .confix .event-list .breakfast .breakfast-text .text-position {
     text-align: center;
   }
 }
-
 main .event .confix hr {
   background-color: #828181;
   border: 0;
   height: 1px;
   margin: 0 auto 30px auto;
 }
-
 main .event .confix .btn button {
   width: 200px;
   height: 55px;
@@ -695,151 +513,123 @@ main .event .confix .btn button {
   background-color: #5a362c;
   color: #fff;
 }
-
 main .program {
   margin-bottom: 100px;
 }
-
 @media screen and (min-width: 768px) {
   main .program {
     margin-bottom: 120px;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .program {
     margin-bottom: 250px;
   }
 }
-
 main .program .confix {
   width: 100%;
   margin: 0 auto;
   padding: 0 7%;
 }
-
 @media screen and (min-width: 1024px) {
   main .program .confix {
     max-width: 1320px;
     padding: 0;
   }
 }
-
 main .program .confix h2 {
   font-size: 2em;
   margin-bottom: 5px;
 }
-
 main .program .confix p {
   font-size: 0.8em;
   margin-bottom: 80px;
 }
-
 @media screen and (min-width: 1024px) {
   main .program .confix .program-list .program-grid {
     width: 75%;
     margin: 0 auto;
   }
 }
-
 main .program .confix .program-list .program-grid a .face,
 main .program .confix .program-list .program-grid a .campfire {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 50px;
-  -webkit-transform: scale(0.96);
-          transform: scale(0.96);
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
-  -webkit-transition: 0.3s ease-out;
+  transform: scale(0.96);
+  transition-delay: 0.8s;
   transition: 0.3s ease-out;
 }
-
 main .program .confix .program-list .program-grid a .face:hover,
 main .program .confix .program-list .program-grid a .campfire:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: 0.2s ease-in;
+  transform: scale(1);
   transition: 0.2s ease-in;
 }
-
+@media screen and (min-width: 768px) {
+  main .program .confix .program-list .program-grid a .face,
+main .program .confix .program-list .program-grid a .campfire {
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 768px) {
   main .program .confix .program-list .program-grid a .face img,
-  main .program .confix .program-list .program-grid a .campfire img {
+main .program .confix .program-list .program-grid a .campfire img {
     width: 40%;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main .program .confix .program-list .program-grid a .face img,
-  main .program .confix .program-list .program-grid a .campfire img {
+main .program .confix .program-list .program-grid a .campfire img {
     width: 25%;
   }
 }
-
 main .program .confix .program-list .program-grid a .face div,
 main .program .confix .program-list .program-grid a .campfire div {
   width: 270px;
   margin: 0 auto;
 }
-
 main .program .confix .program-list .program-grid a .face div h4,
 main .program .confix .program-list .program-grid a .campfire div h4 {
   margin: 15px 0 10px 0;
 }
-
 @media screen and (min-width: 768px) {
   main .program .confix .program-list .program-grid a .face div h4,
-  main .program .confix .program-list .program-grid a .campfire div h4 {
+main .program .confix .program-list .program-grid a .campfire div h4 {
     text-align: left;
     margin-top: 0;
   }
 }
-
 main .program .confix .program-list .program-grid a .face div p,
 main .program .confix .program-list .program-grid a .campfire div p {
   margin: 0 auto;
   text-align: left;
 }
-
 @media screen and (min-width: 768px) {
   main .program .confix .program-list .program-grid a .face div,
-  main .program .confix .program-list .program-grid a .campfire div {
+main .program .confix .program-list .program-grid a .campfire div {
     width: 50%;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .program .confix .program-list .program-grid a .face,
-  main .program .confix .program-list .program-grid a .campfire {
-    display: -webkit-box;
-    display: -ms-flexbox;
+main .program .confix .program-list .program-grid a .campfire {
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
 }
-
 @media screen and (min-width: 768px) {
   main .program .confix .program-list .program-grid a .face,
-  main .program .confix .program-list .program-grid a .campfire {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+main .program .confix .program-list .program-grid a .campfire {
+    justify-content: space-around;
   }
 }
-
 main .program .confix hr {
   background-color: #828181;
   border: 0;
   height: 1px;
   margin: 0 auto 30px auto;
 }
-
 main .program .confix .btn button {
   width: 200px;
   height: 55px;
@@ -849,4 +639,22 @@ main .program .confix .btn button {
   background-color: #5a362c;
   color: #fff;
 }
-/*# sourceMappingURL=index.css.map */
+main .middle-banner .left-side {
+  background-color: #5a362c;
+  text-align: left;
+  padding: 80px 0;
+}
+main .middle-banner .left-side .confix {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7%;
+}
+@media screen and (min-width: 1024px) {
+  main .middle-banner .left-side .confix {
+    max-width: 1320px;
+    padding: 0;
+  }
+}
+main .middle-banner .left-side .confix .left-text h2 {
+  color: #b28c82;
+}/*# sourceMappingURL=index.css.map */

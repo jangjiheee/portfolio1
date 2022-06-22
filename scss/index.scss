@@ -482,6 +482,7 @@ main {
                         .face,
                         .campfire {
                             display: flex;
+                            flex-direction: column;
                             align-items: center;
 
                             margin-bottom: 50px;
@@ -491,6 +492,9 @@ main {
                             &:hover {
                                 transform: scale(1);
                                 transition: 0.2s ease-in;
+                            }
+                            @include responsive(tablet-size) {
+                                flex-direction: row;
                             }
     
                             img {
@@ -540,6 +544,24 @@ main {
             .btn {
                 button {
                     @include button();
+                }
+            }
+        }
+    }
+
+    .middle-banner {
+        .left-side {
+            background-color: $brown;
+            text-align: left;
+            padding: 80px 0;
+
+            .confix {
+                @include confix();
+
+                .left-text {
+                    h2 {
+                        color: $mem-color;
+                    }
                 }
             }
         }

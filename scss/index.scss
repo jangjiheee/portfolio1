@@ -850,7 +850,7 @@ main {
                             img {
                                 &:hover {
                                     opacity: 0.7;
-                                    transform: translate(0, -5px);
+                                    transform: translate(0, -4px);
                                     transition: 0.3s ease;
                                 }
                             }
@@ -893,6 +893,9 @@ footer {
                         line-height: 1.5em;
                         font-weight: 100;
                         font-size: 0.75em;
+                        @include responsive(pc-size) {
+                            margin-right: 120px;
+                        }
                     }
     
                     .footer-company {
@@ -919,6 +922,15 @@ footer {
                            .sns {
                             margin: 10px 0 5px 0;
                            }
+                           .family-site {
+                                form{
+                                    select{
+                                        width: 200px;
+                                        text-align: center;
+                                        border-radius: 0;
+                                    }
+                                }
+                            }
                         }
 
                         @include responsive(tablet-size) {
@@ -930,6 +942,11 @@ footer {
                         display: flex;
                         justify-content: space-between;
                     }
+                }
+
+                @include responsive(pc-size) {
+                    display: flex;
+                    justify-content: space-around;
                 }
             }
         }

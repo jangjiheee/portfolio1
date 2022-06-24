@@ -294,6 +294,9 @@ article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li a {
   color: #fff;
   line-height: 24px;
 }
+article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li a:hover {
+  color: #b28c82;
+}
 article .reserve-bar .confix .reserve-confix .reservation ul .li-flex li img {
   margin-right: 15px;
   transform: translateY(25%);
@@ -539,7 +542,7 @@ main .event .confix .btn button:hover {
   transition: 0.2s ease-in;
   color: #b28c82;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 main .program {
   margin-bottom: 150px;
@@ -677,7 +680,7 @@ main .program .confix .btn button:hover {
   transition: 0.2s ease-in;
   color: #b28c82;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 main .middle-banner {
   display: flex;
@@ -1016,7 +1019,7 @@ main .room .btn button:hover {
   transition: 0.2s ease-in;
   color: #b28c82;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 main .facility {
   margin-bottom: 150px;

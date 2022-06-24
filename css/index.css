@@ -119,6 +119,9 @@ header .logo-menu .confix .header-flex .menu .small-nav {
     padding-right: 0;
     border-right: none;
   }
+  header .logo-menu .confix .header-flex .menu .small-nav ul li a:hover {
+    color: #b28c82;
+  }
 }
 @media screen and (min-width: 1024px) {
   header .logo-menu .confix .header-flex .menu .small-nav {
@@ -156,6 +159,19 @@ header .logo-menu .confix .header-flex .menu .main-nav ul li {
     font-size: 1.1em;
     font-weight: 600;
   }
+}
+header .logo-menu .confix .header-flex .menu .main-nav ul li:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px #b28c82;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in;
+}
+header .logo-menu .confix .header-flex .menu .main-nav ul li:hover:after {
+  transform: scaleX(1);
+}
+header .logo-menu .confix .header-flex .menu .main-nav ul li a:hover {
+  color: #b28c82;
 }
 
 article .main-img {
@@ -518,6 +534,13 @@ main .event .confix .btn button {
   background-color: #5a362c;
   color: #fff;
 }
+main .event .confix .btn button:hover {
+  background-color: #38221c;
+  transition: 0.2s ease-in;
+  color: #b28c82;
+  font-weight: 600;
+  font-size: 1em;
+}
 main .program {
   margin-bottom: 150px;
 }
@@ -649,6 +672,13 @@ main .program .confix .btn button {
   background-color: #5a362c;
   color: #fff;
 }
+main .program .confix .btn button:hover {
+  background-color: #38221c;
+  transition: 0.2s ease-in;
+  color: #b28c82;
+  font-weight: 600;
+  font-size: 1em;
+}
 main .middle-banner {
   display: flex;
   flex-direction: column;
@@ -723,6 +753,15 @@ main .middle-banner .left-side .confix .member-benefit-detail a {
   font-weight: 600;
   color: #fff;
 }
+main .middle-banner .left-side .confix .member-benefit-detail a span img {
+  transform: translateY(5px);
+}
+main .middle-banner .left-side .confix .member-benefit-detail a:hover {
+  color: #b28c82;
+}
+main .middle-banner .left-side .confix .member-benefit-detail a:hover span img {
+  transform: scale(1.3) translateY(5px);
+}
 main .middle-banner .right-side {
   display: none;
 }
@@ -779,23 +818,84 @@ main .room .confix h2 + p {
     font-size: 1em;
   }
 }
+main .room .confix .room-flexbox {
+  /*.room-info-img {
+      @include responsive(pc-size) {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+      }
+
+      .room-info {
+          display: none;
+          @include responsive(tablet-size) {
+              display: block;
+          }
+          h4 {
+              font-size: 1.1em;
+              margin-bottom: 20px;
+              @include responsive(pc-size) {
+                  margin: 80px 0;
+              }
+          }
+          p {
+              font-size: 0.9em;
+              margin: 0 auto;
+          }
+          .room-detail-info {
+              margin: 10px 0;
+          }
+      }
+
+      .room-zoom {
+          display: none;
+
+          @include responsive(tablet-size) {
+              display: block;
+          }
+
+          img {
+              @include responsive(tablet-size) {
+                  width: 90%;
+              }
+              @include responsive(pc-size) {
+                  width: 100%;
+              }
+          }
+      }
+  }*/
+}
 @media screen and (min-width: 768px) {
   main .room .confix .room-flexbox {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1024px) {
   main .room .confix .room-flexbox {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 main .room .confix .room-flexbox .room-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 auto;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .room .confix .room-flexbox .room-list {
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .room .confix .room-flexbox .room-list {
+    margin-right: 0;
+    width: 15%;
+  }
 }
 main .room .confix .room-flexbox .room-list ul li {
   display: flex;
@@ -806,7 +906,15 @@ main .room .confix .room-flexbox .room-list ul li {
 }
 @media screen and (min-width: 768px) {
   main .room .confix .room-flexbox .room-list ul li {
-    margin: 30px auto;
+    margin: 30px 0 33px auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .room .confix .room-flexbox .room-list ul li {
+    margin-bottom: 20px;
+  }
+  main .room .confix .room-flexbox .room-list ul li:last-child {
+    margin-bottom: 0px;
   }
 }
 main .room .confix .room-flexbox .room-list ul li a {
@@ -847,52 +955,44 @@ main .room .confix .room-flexbox .room-list p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+main .room .confix .room-flexbox .room-info-img {
+  display: none;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  main .room .confix .room-flexbox .room-info-img {
+    display: block;
+    width: 67%;
+  }
+}
 @media screen and (min-width: 1024px) {
   main .room .confix .room-flexbox .room-info-img {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-}
-main .room .confix .room-flexbox .room-info-img .room-info {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  main .room .confix .room-flexbox .room-info-img .room-info {
-    display: block;
+    width: 75%;
   }
 }
 main .room .confix .room-flexbox .room-info-img .room-info h4 {
+  padding-top: 30px;
   font-size: 1.1em;
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 1024px) {
-  main .room .confix .room-flexbox .room-info-img .room-info h4 {
-    margin: 80px 0;
-  }
+  margin-bottom: 15px;
 }
 main .room .confix .room-flexbox .room-info-img .room-info p {
   font-size: 0.9em;
-  margin: 0 auto;
+  margin-bottom: 15px;
 }
-main .room .confix .room-flexbox .room-info-img .room-info .room-detail-info {
-  margin: 10px 0;
-}
-main .room .confix .room-flexbox .room-info-img .room-zoom {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  main .room .confix .room-flexbox .room-info-img .room-zoom {
-    display: block;
+@media screen and (min-width: 1024px) {
+  main .room .confix .room-flexbox .room-info-img .room-info {
+    margin-top: 150px;
+    margin-right: 80px;
   }
 }
-@media screen and (min-width: 768px) {
-  main .room .confix .room-flexbox .room-info-img .room-zoom img {
-    width: 90%;
-  }
+main .room .confix .room-flexbox .room-info-img .room-zoom img {
+  width: 450px;
+  bottom: 0;
 }
 @media screen and (min-width: 1024px) {
   main .room .confix .room-flexbox .room-info-img .room-zoom img {
+    margin-top: 50px;
     width: 100%;
   }
 }
@@ -910,6 +1010,13 @@ main .room .btn button {
   border: 0;
   background-color: #5a362c;
   color: #fff;
+}
+main .room .btn button:hover {
+  background-color: #38221c;
+  transition: 0.2s ease-in;
+  color: #b28c82;
+  font-weight: 600;
+  font-size: 1em;
 }
 main .facility {
   margin-bottom: 150px;
@@ -966,6 +1073,9 @@ main .facility .confix .facility-flexbox {
 }
 main .facility .confix .facility-flexbox .facility-list ul div li {
   position: relative;
+}
+main .facility .confix .facility-flexbox .facility-list ul div li p {
+  color: #fff;
 }
 main .facility .confix .facility-flexbox .facility-list ul div li img:hover {
   opacity: 0.7;
@@ -1024,6 +1134,9 @@ footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet
 }
 footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-company .footer-company-law ul li a {
   color: #fff;
+}
+footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-company .footer-company-law ul li a:hover {
+  color: #b28c82;
 }
 @media screen and (min-width: 768px) {
   footer .logo-footer-text-footer-menu .confix .footer-flexbox .footer-flex-tablet .footer-company .footer-company-law ul li {

@@ -75,6 +75,11 @@ header {
                                         padding-right: 0;
                                         border-right: none;
                                     }
+                                    a {
+                                        &:hover {
+                                            color: $mem-color;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -108,6 +113,21 @@ header {
                                 @include responsive(pc-size) {
                                     font-size: 1.1em;
                                     font-weight: 600;
+                                }
+                                &:after {
+                                    display: block;
+                                    content: '';
+                                    border-bottom: solid 1px $mem-color;
+                                    transform: scaleX(0);
+                                    transition: transform 250ms ease-in;
+                                }
+                                &:hover:after {
+                                    transform: scaleX(1);
+                                }
+                                a {
+                                    &:hover {
+                                        color: $mem-color;
+                                    }
                                 }
                             }
                         }
@@ -618,6 +638,20 @@ main {
                         font-size: 1.375em;
                         font-weight: 600;
                         color: $white;
+                        span {
+                            img {
+                                transform: translateY(5px);
+                            }
+                        }
+
+                        &:hover {
+                            color: $mem-color;
+                            span {
+                                img {
+                                    transform: scale(1.3) translateY(5px);
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -666,26 +700,34 @@ main {
                 }
             }
 
+            
             .room-flexbox {
                 @include responsive(tablet-size) {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-around;
+                    justify-content: space-between;
                 }
                 @include responsive(pc-size) {
-                    justify-content: space-between;
+                    justify-content: space-around;
                 }
 
                 .room-list {
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     margin:  0 auto;
+                    margin-bottom: 50px;
                     
-                    @include responsive(table-size) {
-                        margin-top: auto;
-                        margin-bottom: 5px;
+                    @include responsive(tablet-size) {
+                        margin-left: 0;
+                        margin-bottom: 0;
+                        width: 30%;
                     }
+                    @include responsive(pc-size) {
+                        margin-right: 0;
+                        width: 15%;
+                    }
+                    
 
                     ul {
                         li {
@@ -695,7 +737,13 @@ main {
                             height: 140px;
                             margin: 10px auto;
                             @include responsive(tablet-size) {
-                                margin: 30px auto;
+                                margin: 30px 0 33px auto;
+                            }
+                            @include responsive(pc-size) {
+                                margin-bottom: 20px;
+                                &:last-child {
+                                    margin-bottom: 0px;
+                                }
                             }
                             
                             a {
@@ -749,6 +797,46 @@ main {
                 }
 
                 .room-info-img {
+                    display: none;
+                    margin-bottom: 50px;
+
+                    @include responsive(tablet-size) {
+                        display: block;
+                        width: 67%;
+                    }
+                    @include responsive(pc-size) {
+                        display: flex;
+                        width: 75%;
+                    }
+                    .room-info {
+                        h4 {
+                            padding-top: 30px;
+                            font-size: 1.1em;
+                            margin-bottom: 15px;
+                        }
+                        p {
+                            font-size: 0.9em;
+                            margin-bottom: 15px;
+                        }
+                        @include responsive(pc-size) {
+                            margin-top: 150px;
+                            margin-right: 80px;
+                        }
+                    }
+
+                    .room-zoom {
+                        img {
+                            width: 450px;
+                            bottom: 0;
+                            @include responsive(pc-size) {
+                                margin-top: 50px;
+                                width: 100%
+                            }
+                        }
+                    }
+                }
+
+                /*.room-info-img {
                     @include responsive(pc-size) {
                         display: flex;
                         justify-content: space-between;
@@ -792,7 +880,7 @@ main {
                             }
                         }
                     }
-                }
+                }*/
             }
         }
 
@@ -847,6 +935,9 @@ main {
                         div {
                            li {
                             position: relative;
+                            p {
+                                color: $white;
+                            }
                             img {
                                 &:hover {
                                     opacity: 0.7;
@@ -908,6 +999,9 @@ footer {
                                     font-size: 0.75em;
                                     a {
                                         color: $white;
+                                        &:hover {
+                                            color: $mem-color;
+                                        }
                                     }
 
                                     @include responsive(tablet-size) {

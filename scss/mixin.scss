@@ -24,6 +24,13 @@
     border: 0;
     background-color: $brown;
     color: $white;
+    &:hover {
+        background-color: $dark-brown;
+        transition: 0.2s ease-in;
+        color: $mem-color;
+        font-weight: 600;
+        font-size: 1em;
+    }
 }
 
 @mixin responsive($break) {

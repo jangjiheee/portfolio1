@@ -645,8 +645,13 @@ main .middle-banner .left-side .confix .left-text h3 {
 main .middle-banner .left-side .confix .left-text p {
   line-height: 2em;
   color: #fff;
-  font-size: 1em;
+  font-size: 0.85em;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  main .middle-banner .left-side .confix .left-text p {
+    font-size: 1em;
+  }
 }
 main .middle-banner .left-side .confix .member-benefit-detail {
   position: absolute;

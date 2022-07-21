@@ -46,7 +46,6 @@ header .logo-menu .confix {
 header .logo-menu .confix .header-flex {
   display: flex;
   flex-direction: column;
-  margin: 0 10px 0 10px;
 }
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex {
@@ -146,8 +145,8 @@ header .logo-menu .confix .header-flex .menu .main-nav ul {
   }
 }
 header .logo-menu .confix .header-flex .menu .main-nav ul li {
-  font-size: 0.65em;
-  font-weight: 600;
+  font-size: 0.6em;
+  font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   header .logo-menu .confix .header-flex .menu .main-nav ul li {
@@ -360,11 +359,11 @@ main .event .confix p {
     justify-content: space-around;
   }
 }
-main .event .confix .event-list .beer {
+main .event .confix .event-list .eventBox {
   margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
-  main .event .confix .event-list .beer {
+  main .event .confix .event-list .eventBox {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -372,25 +371,26 @@ main .event .confix .event-list .beer {
   }
 }
 @media screen and (min-width: 1024px) {
-  main .event .confix .event-list .beer {
+  main .event .confix .event-list .eventBox {
     flex-direction: column;
     width: 30%;
   }
 }
-main .event .confix .event-list .beer .img-box a img {
+main .event .confix .event-list .eventBox .img-box a img {
+  width: 100%;
   opacity: 1;
 }
-main .event .confix .event-list .beer .img-box a img:hover {
+main .event .confix .event-list .eventBox .img-box a img:hover {
   opacity: 0.7;
   transition: 0.5s ease-out;
 }
 @media screen and (min-width: 1024px) {
-  main .event .confix .event-list .beer .img-box a img {
+  main .event .confix .event-list .eventBox .img-box a img {
     width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
-  main .event .confix .event-list .beer .beer-text {
+  main .event .confix .event-list .eventBox .eventText {
     margin-left: 30px;
     display: flex;
     justify-content: center;
@@ -399,129 +399,19 @@ main .event .confix .event-list .beer .img-box a img:hover {
   }
 }
 @media screen and (min-width: 1024px) {
-  main .event .confix .event-list .beer .beer-text {
+  main .event .confix .event-list .eventBox .eventText {
     margin-left: 0;
     width: 100%;
     margin: auto;
   }
 }
 @media screen and (min-width: 768px) {
-  main .event .confix .event-list .beer .beer-text .text-position {
+  main .event .confix .event-list .eventBox .eventText .text-position {
     text-align: left;
   }
 }
 @media screen and (min-width: 1024px) {
-  main .event .confix .event-list .beer .beer-text .text-position {
-    text-align: center;
-  }
-}
-main .event .confix .event-list .kids {
-  margin-bottom: 50px;
-}
-@media screen and (min-width: 768px) {
-  main .event .confix .event-list .kids {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  main .event .confix .event-list .kids {
-    flex-direction: column;
-    width: 30%;
-  }
-}
-main .event .confix .event-list .kids .img-box a img {
-  opacity: 1;
-}
-main .event .confix .event-list .kids .img-box a img:hover {
-  opacity: 0.7;
-  transition: 0.5s ease-out;
-}
-@media screen and (min-width: 1024px) {
-  main .event .confix .event-list .kids .img-box a img {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  main .event .confix .event-list .kids .kids-text {
-    margin-left: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  main .event .confix .event-list .kids .kids-text {
-    margin-left: 0;
-    width: 100%;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  main .event .confix .event-list .kids .kids-text .text-position {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 1024px) {
-  main .event .confix .event-list .kids .kids-text .text-position {
-    text-align: center;
-  }
-}
-main .event .confix .event-list .breakfast {
-  margin-bottom: 50px;
-}
-@media screen and (min-width: 768px) {
-  main .event .confix .event-list .breakfast {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  main .event .confix .event-list .breakfast {
-    flex-direction: column;
-    width: 30%;
-  }
-}
-main .event .confix .event-list .breakfast .img-box a img {
-  opacity: 1;
-}
-main .event .confix .event-list .breakfast .img-box a img:hover {
-  opacity: 0.7;
-  transition: 0.5s ease-out;
-}
-@media screen and (min-width: 1024px) {
-  main .event .confix .event-list .breakfast .img-box a img {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  main .event .confix .event-list .breakfast .breakfast-text {
-    margin-left: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  main .event .confix .event-list .breakfast .breakfast-text {
-    margin-left: 0;
-    width: 100%;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  main .event .confix .event-list .breakfast .breakfast-text .text-position {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 1024px) {
-  main .event .confix .event-list .breakfast .breakfast-text .text-position {
+  main .event .confix .event-list .eventBox .eventText .text-position {
     text-align: center;
   }
 }
@@ -733,13 +623,24 @@ main .middle-banner .left-side .confix .left-text {
   }
 }
 main .middle-banner .left-side .confix .left-text h2 {
+  font-size: 2.5em;
   color: #b28c82;
   letter-spacing: 0.1em;
+}
+@media screen and (min-width: 1024px) {
+  main .middle-banner .left-side .confix .left-text h2 {
+    font-size: 2.9em;
+  }
 }
 main .middle-banner .left-side .confix .left-text h3 {
   margin: 30px 0 70px 0;
   color: #fff;
-  font-size: 2.05em;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 1024px) {
+  main .middle-banner .left-side .confix .left-text h3 {
+    font-size: 2em;
+  }
 }
 main .middle-banner .left-side .confix .left-text p {
   line-height: 2em;

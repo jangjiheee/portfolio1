@@ -33,6 +33,59 @@
     }
 }
 
+@mixin eventBox() {
+    margin-bottom: 50px;
+
+    @include responsive(tablet-size) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    @include responsive(pc-size) {
+        flex-direction: column;
+        width: 30%;
+    }
+}
+
+@mixin eventImg() {
+    width: 100%;
+    opacity: 1;
+    &:hover {
+        opacity: 0.7;
+        transition: 0.5s ease-out;
+    }
+    @include responsive(pc-size) {
+        width: 100%;
+    }
+}
+
+@mixin eventText() {
+    @include responsive(tablet-size) {
+        margin-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+    }
+
+    @include responsive(pc-size) {
+        margin-left: 0;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .text-position {
+        @include responsive(tablet-size) {
+            text-align: left;
+        }
+        @include responsive(pc-size) {
+            text-align: center;
+        }
+    }
+}
+
 @mixin responsive($break) {
    @if $break == mobile-size {
        @media screen and (min-width: $break-mobile) {

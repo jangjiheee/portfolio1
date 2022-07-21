@@ -11,7 +11,6 @@ header {
             .header-flex {
                 display: flex;
                 flex-direction: column;
-                margin : 0 10px 0 10px;
 
                 @include responsive(tablet-size) {
                     flex-direction: row;
@@ -100,8 +99,8 @@ header {
 
                             li {
                                 font : {
-                                    size: 0.65em;
-                                    weight: 600;
+                                    size: 0.6em;
+                                    weight: 500;
                                 }
                                 @include responsive(tablet-size) {
                                     font-size: 0.7em;
@@ -298,177 +297,27 @@ main {
                     justify-content: space-around;
                 }
 
-                .beer {
-                    margin-bottom: 50px;
-
-                    @include responsive(tablet-size) {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        margin-top: 50px;
-                    }
-
-                    @include responsive(pc-size) {
-                        flex-direction: column;
-                        width: 30%;
-                    }
+                .eventBox {
+                    @include eventBox();
 
                     .img-box {
                         a {
                             img {
-                                opacity: 1;
-                                &:hover {
-                                    opacity: 0.7;
-                                    transition: 0.5s ease-out;
-                                }
-                                @include responsive(pc-size) {
-                                    width: 100%;
-                                }
+                                @include eventImg();
                             }
                         }
                     }
 
-                    .beer-text {
-                        @include responsive(tablet-size) {
-                            margin-left: 30px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 35%;
-                        }
-
-                        @include responsive(pc-size) {
-                            margin-left: 0;
-                            width: 100%;
-                            margin: auto;
-                        }
-                        
-                        .text-position {
-                            @include responsive(tablet-size) {
-                                text-align: left;
-                            }
-                            @include responsive(pc-size) {
-                                text-align: center;
-                            }
-                        }
-                    }
-                }
-
-                .kids {
-                    margin-bottom: 50px;
-
-                    @include responsive(tablet-size) {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        margin-top: 50px;
-                    }
-
-                    @include responsive(pc-size) {
-                        flex-direction: column;
-                        width: 30%;
-                    }
-
-                    .img-box {
-                        a {
-                            img {
-                                opacity: 1;
-                                &:hover {
-                                    opacity: 0.7;
-                                    transition: 0.5s ease-out;
-                                }
-                                @include responsive(pc-size) {
-                                    width: 100%;
-                                }
-                            }
-                        }
-                    }
-
-                    .kids-text {
-                        @include responsive(tablet-size) {
-                            margin-left: 30px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 35%;
-                        }
-
-                        @include responsive(pc-size) {
-                            margin-left: 0;
-                            width: 100%;
-                            margin: auto;
-                        }
-                        
-                        .text-position {
-                            @include responsive(tablet-size) {
-                                text-align: left;
-                            }
-                            @include responsive(pc-size) {
-                                text-align: center;
-                            }
-                        }
-                    }
-                }
-
-                .breakfast {
-                    margin-bottom: 50px;
-
-                    @include responsive(tablet-size) {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        margin-top: 50px;
-                    }
-
-                    @include responsive(pc-size) {
-                        flex-direction: column;
-                        width: 30%;
-                    }
-
-                    .img-box {
-                        a {
-                            img {
-                                opacity: 1;
-                                &:hover {
-                                    opacity: 0.7;
-                                    transition: 0.5s ease-out;
-                                }
-                                @include responsive(pc-size) {
-                                    width: 100%;
-                                }
-                            }
-                        }
-                    }
-
-                    .breakfast-text {
-                        @include responsive(tablet-size) {
-                            margin-left: 30px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 35%;
-                        }
-
-                        @include responsive(pc-size) {
-                            margin-left: 0;
-                            width: 100%;
-                            margin: auto;
-                        }
-                        
-                        .text-position {
-                            @include responsive(tablet-size) {
-                                text-align: left;
-                            }
-                            @include responsive(pc-size) {
-                                text-align: center;
-                            }
-                        }
+                    .eventText {
+                        @include eventText();
                     }
                 }
             }
+
             hr {
                 @include hr();
             }
+
             .btn {
                 button {
                     @include button();
@@ -611,16 +460,29 @@ main {
                     }
 
                     h2 {
+                        font-size: 2.5em;
                         color: $mem-color;
                         letter-spacing: 0.1em;
                         @include responsive(tabelt-size) {
                             letter-spacing: 0.2em;
+                            font-size: 2.7em;
+                        }
+                        @include responsive(pc-size) {
+                            font-size: 2.9em;
                         }
                     }
+
                     h3 {
                         margin: 30px 0 70px 0;
                         color: $white;
-                        font-size: 2.05em;
+                        font-size: 1.5em;
+                        @include responsive(tabelt-size) {
+                            font-size: 2em;
+                        }
+                        @include responsive(pc-size) {
+                            font-size: 2em;
+                        }
+
                     }
                     p {
                         line-height: 2em;

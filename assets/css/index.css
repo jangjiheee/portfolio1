@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body, html {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.wrapper header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.wrapper header .header-flex {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper header .header-flex .main-logo {
+  max-width: 30%;
+  margin: 10px 0;
+}
+.wrapper header .header-flex .main-logo img {
+  width: 100%;
+}
+.wrapper header .header-flex .menu {
+  margin-bottom: 20px;
+}
+.wrapper header .header-flex .menu .small-nav {
+  margin-bottom: 10px;
+}
+.wrapper header .header-flex .menu .small-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+.wrapper header .header-flex .menu .small-nav ul li {
+  margin-right: 14px;
+  position: relative;
+}
+.wrapper header .header-flex .menu .small-nav ul li:after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 12px;
+  top: 50%;
+  right: -7px;
+  transform: translateY(-50%);
+  background-color: #999;
+}
+.wrapper header .header-flex .menu .small-nav ul li:last-child {
+  margin-right: 0;
+}
+.wrapper header .header-flex .menu .small-nav ul li:last-child:after {
+  display: none;
+}
+.wrapper header .header-flex .menu .main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+}
+.wrapper article .main-img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../image/main_page.jpg") no-repeat;
+  background-size: cover;
+  background-position: left center;
+  position: relative;
+}
+.wrapper article .main-img .title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: #eae6e6;
+}
+.wrapper article .main-img .title h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.wrapper article .main-img .reserve-bar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #5a362c;
+  color: #eae6e6;
+}
+.wrapper article .main-img .reserve-bar .reservation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.wrapper article .main-img .reserve-bar .reservation p {
+  font-weight: 700;
+  font-size: 20px;
+}
+.wrapper article .main-img .reserve-bar .reservation ul li {
+  margin-bottom: 6px;
+}
+.wrapper article .main-img .reserve-bar .reservation ul li:last-child {
+  margin-bottom: 0;
+}
+.wrapper article .main-img .reserve-bar .reservation ul li a {
+  position: relative;
+  padding-left: 26px;
+  font-size: 16px;
+}
+.wrapper article .main-img .reserve-bar .reservation ul li a:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper article .main-img .reserve-bar .reservation ul li a.calendar:before {
+  background: url("../image/calendar.jpg") no-repeat;
+  background-size: contain;
+}
+.wrapper article .main-img .reserve-bar .reservation ul li a.search:before {
+  background: url("../image/search.jpg") no-repeat;
+  background-size: contain;
+}
+.wrapper main section.section {
+  padding: 200px 0;
+}
+.wrapper main section.section .title-box {
+  margin-bottom: 25px;
+}
+.wrapper main section.section .title-box h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.wrapper main section.section .title-box h2 + p {
+  text-align: center;
+  font-size: 14px;
+}
+.wrapper main section.event .event-list {
+  text-align: center;
+}
+.wrapper main section.facility {
+  padding-bottom: 0;
+}
+.wrapper footer {
+  background-color: #5a362c;
+}/*# sourceMappingURL=index.css.map */

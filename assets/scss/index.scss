@@ -922,18 +922,32 @@
 .wrapper {
     header {
         @include confix();
+        max-width: 1440px;
         .header-flex {
             display: flex;
             flex-direction: column;
+            @include responsive(tablet-size) {
+                height: 80px;
+                padding: 10px 0;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
             .main-logo {
-                max-width: 30%;
-                margin: 10px 0;
+                max-width: 180px;
+                margin: 10px 0 30px;
+                @include responsive(tablet-size) {
+                    margin: 0;
+                }
                 img {
                     width: 100%;
                 }
             }
             .menu {
                 margin-bottom: 20px;
+                @include responsive(tablet-size) {
+                    margin: 0;
+                }
                 .small-nav{
                     margin-bottom: 10px;
                     ul {
@@ -966,9 +980,18 @@
                 .main-nav{
                     ul {
                         display: flex;
-                        justify-content: space-between;
-                        font-size: 16px;
+                        justify-content: flex-end;
+                        font-size: 12px;
                         font-weight: 600;
+                        li {
+                            margin-left: 10px;
+                            @include responsive(tablet-size) {
+                                margin-left: 30px;
+                            }
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                        }
                     }
                 }
             }
@@ -1010,11 +1033,25 @@
                     justify-content: space-between;
                     align-items: center;
                     padding: 10px 0;
+                    @include responsive(tablet-size) {
+                        justify-content: center;
+                        max-width: 1440px;
+                        margin: 0 auto;
+                    }
                     p {
                         font-weight: 700;
                         font-size: 20px;
+                        @include responsive(tablet-size) {
+                            display: flex;
+                            width: 50%;
+                        }
                     }
                     ul {
+                        @include responsive(tablet-size) {
+                            width: 40%;
+                            display: flex;
+                            justify-content: space-between;
+                        }
                         li {
                             margin-bottom: 6px;
                             &:last-child {
@@ -1052,8 +1089,16 @@
     main {
         section.section {
             padding: 200px 0;
+            max-width: 1440px;
+            margin: 0 auto;
             .title-box {
-                margin-bottom: 25px;
+                margin-bottom: 60px;
+                @include responsive(tablet-size) {
+                    margin-bottom: 80px;
+                }
+                @include responsive(pc-size) {
+                    margin-bottom: 100px;
+                }
                 h2 {
                     text-align: center;
                     font-size: 24px;
@@ -1064,18 +1109,394 @@
                     }
                 }
             }
+            .line {
+                height: 1px;
+                width: 100%;
+                background-color: $line-color;
+                display: block;
+                margin-bottom: 30px;
+            }
         }
         section.event {
-            .event-list{ 
-                text-align: center;
+            .confix{
+                @include confix();
+                .event-list{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    @include responsive(tablet-size) {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                    .eventBox {
+                        margin-bottom: 25px;
+                        @include responsive(tablet-size) {
+                            width: calc(33.33% - 10px);
+                        }
+                        .img-box {
+                            overflow: hidden;
+                            max-width: 90%;
+                            width: 100%;
+                            margin: 0 auto;
+                            margin-bottom: 10px;
+                            img {
+                                width: 100%;
+                                border-radius: 40px;
+                                transition: all 0.5s;
+                                &:hover {
+                                    transform: scale(1.1);
+                                }
+                            }
+                            @include responsive(tablet-size) {
+                                max-width: unset;
+                            }
+                            
+                        }
+                        .eventText {
+                            .text-position {
+                                h3 {
+                                    font-size: 18px;
+                                    margin-bottom: 5px;
+                                    &+p {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }            
+                .btn {
+                    text-align: center;
+                    button {
+                        @include button();
+                    }
+                }
+            }
+        }
+        section.program {
+            .confix {
+                @include confix();
+                .program-list {
+                    text-align: center;
+                    .program-grid {
+                        width: 90%;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        @include responsive(tablet-size) {
+                            width: 100%;
+                        }
+                        .pro-list {
+                            @include responsive(tablet-size) {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .box-img {
+                                margin-bottom: 20px;
+                                overflow: hidden;
+                                @include responsive(tablet-size) {
+                                    width: 40%;
+                                    max-width: 320px;
+                                    margin-right: 20px;
+                                }
+                                img {
+                                    width: 100%;
+                                    &:hover {
+                                        transform: scale(1.1);
+                                        transition: all 0.5s;
+                                    }
+                                }
+                            }
+                            .pro-info {
+                                margin-bottom: 25px;
+                                @include responsive(tablet-size) {
+                                    width: 60%;
+                                    text-align: left;
+                                }
+                                h4 {
+                                    font-size: 18px;
+                                    margin-bottom: 10px;
+                                    &+p {
+                                        font-size: 16px;
+                                        text-align: left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                .btn {
+                    text-align: center;
+                    button {
+                        @include button();
+                    }
+                }
+            }
+        }
+        .middle-banner {
+            .banner-flex {
+                @include confix();
+                display: flex;
+                flex-direction: column;
+                @include responsive(tablet-size) {
+                    flex-direction: row;
+                }
+                .left-side {
+                    color: $white;
+                    background-color: $brown;
+                    padding: 50px 10px 100px;
+                    position: relative;
+                    @include responsive(tablet-size) {
+                        width: 50%;
+                        padding: 100px 30px 180px 30px;
+                    }
+                    @include responsive(full) {
+                        padding: 100px 30px 180px 180px;
+                    }
+                    .left-text {
+                        h2 {
+                            color: $mem-color;
+                            margin-bottom: 10px;
+                            font-size: 38px;
+                            @include responsive(tablet-size) {
+                                font-size: 36px;
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 52px;
+                            }
+                        }
+                        h3 {
+                            font-size: 22px;
+                            margin-bottom: 50px;
+                            @include responsive(tablet-size) {
+                                font-size: 24px;
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 32px;
+                            }
+                        }
+                        p {
+                            font-size: 16px;
+                            line-height: 1.6;
+                            @include responsive(tablet-size) {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    .member-benefit-detail {
+                        background-color: $dark-brown;
+                        // display: inline-block;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        font-size: 14px;
+                        .plus {
+                            padding: 10px 50px 10px 20px;
+                            position: relative;
+                            &:after {
+                                position: absolute;
+                                content: "";
+                                width: 16px;
+                                height: 16px;
+                                top: 50%;
+                                right: 20px;
+                                transform: translateY(-50%);
+                                background: url("../../assets/image/plus.jpg") no-repeat;
+                                background-size: contain
+                            }
+                        }
+                    }
+                }
+                .right-side {
+                    background: url("../../assets/image/middle-banner.jpg") no-repeat;
+                    padding: 200px 0;
+                    background-size: cover;
+                    background-position: center center;
+                    @include responsive(tablet-size) {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        section.room {
+            .confix {
+                @include confix();
+                .room-flexbox {
+                    .room-list {
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            @include responsive(tablet-size) {
+                                flex-direction: row;
+                                justify-content: space-between;
+                            }
+                            li {
+                                @include responsive(tablet-size) {
+                                    width: calc(33.33% - 10px);
+                                }
+                                .list-box {
+                                    position: relative;
+                                    margin-bottom: 25px;
+                                    &:hover {
+                                        .background {
+                                            &::before {
+                                                position: absolute;
+                                                content: "";
+                                                width: 100%;
+                                                height: 100%;
+                                                top: 0;
+                                                left: 0;
+                                                // background: rgba(0,0,0,0.6);
+                                                background: none;
+                                                transition: all 0.5s;
+                                            }
+                                            p {
+                                                color: $black;
+                                                transition: all 0.5s;
+                                            }
+                                        }
+                                    }
+                                    .img-box {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                    .background {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        top: 0;
+                                        left: 0;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        &::before {
+                                            position: absolute;
+                                            content: "";
+                                            width: 100%;
+                                            height: 100%;
+                                            top: 0;
+                                            left: 0;
+                                            background: rgba(0,0,0,0.6);
+                                        }
+                                        p {
+                                            color: $white;
+                                            font-weight: 600;
+                                            z-index: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }   
+                }
+                .btn {
+                    text-align: center;
+                    button {
+                        @include button();
+                    }
+                }
             }
         }
         section.facility {
             padding-bottom: 0;
+            .confix {
+                @include confix();
+                .facility-flexbox {
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        @include responsive(tablet-size) {
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                        li {
+                            .facility-box {
+                                position: relative;
+                                &:hover {
+                                    .img {
+                                        overflow: hidden;
+                                        img {
+                                            transform: scale(1.05);
+                                            transition: all 0.5s;
+                                        }
+                                    }
+                                }
+                                p {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    color: $white;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
     footer {
         background-color: $brown;
+        padding: 100px 0;
+        color: $white;
+        .confix {
+            @include confix();
+            .footer-flexbox {
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+                @include responsive(tablet-size) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    max-width: 1023px;
+                    margin: 0 auto;
+                }
+                .logo {
+                    width: 40%;
+                    margin-bottom: 30px;
+                    @include responsive(tablet-size) {
+                        width: unset;
+                    }
+                }
+                .footer-flex-tablet {
+                    display: flex;
+                    flex-direction: column;
+                    .footer-info {
+                        margin-bottom: 30px;
+                    }
+                    .footer-company {
+                        .footer-company-law {
+                            margin-bottom: 20px;
+                            max-width: 360px;
+                            ul {
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                        }
+                        .footer-right-align {
+                            display: flex;
+                            justify-content: space-between;
+
+                            .sns {
+                                display: flex;
+                                a {
+                                    margin-right: 10px;
+                                    &:last-child {
+                                        margin-right: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

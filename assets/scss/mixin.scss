@@ -11,11 +11,12 @@
     // }
     // background-color: skyblue;
 }
-@mixin hr() {
+@mixin line() {
     background-color: $line-color;
     border: 0;
     height: 1px;
     margin: 0 auto 30px auto;
+    padding: 0 20px;
 }
 @mixin button() {
     width: 200px;
@@ -104,5 +105,11 @@
        @media screen and (min-width: $break-pc) {
            @content;
        }
+   }
+
+   @else if $break == full {
+        @media screen and (min-width: 1440px) {
+            @content;
+        }
    }
 }

@@ -926,18 +926,21 @@
         .header-flex {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            max-height: 135px;
             @include responsive(tablet-size) {
                 height: 80px;
-                padding: 10px 0;
+                padding: 20px 0;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
             }
             .main-logo {
-                max-width: 180px;
-                margin: 10px 0 30px;
+                max-width: 110px;
+                margin: 20px 0 10px;
                 @include responsive(tablet-size) {
-                    margin: 0;
+                    margin: unset;
+                    max-width: 100px;
                 }
                 img {
                     width: 100%;
@@ -949,11 +952,14 @@
                     margin: 0;
                 }
                 .small-nav{
-                    margin-bottom: 10px;
+                    margin-bottom: 8px;
                     ul {
                         display: flex;
-                        justify-content: flex-end;
+                        justify-content: center;
                         font-size: 14px;
+                        @include responsive(tablet-size) {
+                            justify-content: flex-end;
+                        }
                         li {
                             margin-right: 14px;
                             position: relative;
@@ -982,7 +988,7 @@
                         display: flex;
                         justify-content: flex-end;
                         font-size: 12px;
-                        font-weight: 600;
+                        font-weight: 700;
                         li {
                             margin-left: 10px;
                             @include responsive(tablet-size) {
@@ -1001,7 +1007,7 @@
     article {
         .main-img {
             @include confix();
-            height: 100vh;
+            height: calc(100vh - 135px);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1009,15 +1015,24 @@
             background-size: cover;
             background-position: left center;
             position: relative;
+            @include responsive(tablet-size) {
+                height: calc(100vh - 80px);
+            }
             .title {
                 text-align: center;
                 font-weight:600;
                 font-size: 16px;
                 color: $white;
                 h1 {
-                    font-size: 28px;
+                    font-size: 22px;
                     font-weight: 800;
                     margin-bottom: 20px;
+                }
+                p {
+                    font-size: 12px;
+                    font-weight: 400;
+                    word-break: keep-all;
+                    line-height: 1.6;
                 }
             }
             .reserve-bar {
@@ -1040,7 +1055,7 @@
                     }
                     p {
                         font-weight: 700;
-                        font-size: 20px;
+                        font-size: 16px;
                         @include responsive(tablet-size) {
                             display: flex;
                             width: 50%;
@@ -1060,7 +1075,7 @@
                             a {
                                 position: relative;
                                 padding-left: 26px;
-                                font-size: 16px;
+                                font-size: 14px;
                                 &:before {
                                     position: absolute;
                                     content: "";

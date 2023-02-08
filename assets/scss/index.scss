@@ -1027,12 +1027,24 @@
                     font-size: 22px;
                     font-weight: 800;
                     margin-bottom: 20px;
+                    @include responsive(tablet-size) {
+                        font-size: 26px;
+                    }
+                    @include responsive(pc-size) {
+                        font-size: 38px;
+                    }
                 }
                 p {
                     font-size: 12px;
                     font-weight: 400;
                     word-break: keep-all;
                     line-height: 1.6;
+                    @include responsive(tablet-size) {
+                        font-size: 16px;
+                    }
+                    @include responsive(pc-size) {
+                        font-size: 20px;
+                    }
                 }
             }
             .reserve-bar {
